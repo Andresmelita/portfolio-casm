@@ -6,7 +6,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Carlos Andrés Salazar Melita</h1>
+      <h1>Hola</h1>
+      <h1>mi</h1>
+      <h1>querida</h1>
+      <h1>Nohelia</h1>
+      <h1>c:</h1>
     </div>
   )
 }
