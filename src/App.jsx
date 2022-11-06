@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
+import About from './components/About/About'
 import Cover from './components/Cover/Cover'
 import Navbar from './components/Navbar/Navbar'
 
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Navbar scrollHeight={scrollHeight}/>
       <Cover/>
+      <About/>
     </div>
   )
 }
