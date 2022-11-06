@@ -1,17 +1,21 @@
 .navbar {
     position: fixed;
     top: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.452);
     width: 100%;
-    height: 80px;
+    height: 60px;
     padding-left: 50px;
     font-size: 20px;
     z-index: 1;
 }
 
+.scrolling {
+    background-color: black;
+    transition: all 0.6s ease;
+}
+
 .navbar-logo {
-    height: 80px;
-    line-height: 80px;
+    line-height: 60px;
     color: aliceblue;
     cursor: pointer;
 }
