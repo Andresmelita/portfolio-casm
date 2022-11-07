@@ -26,9 +26,39 @@
 
 .about-img {
     width: 45%;
-    height: 100%;
     display: flex;
     align-self: center;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+    .about-container {
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+
+    .about-description {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 20px 50px 20px;
+
+        h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .about-img {
+        width: 100%;
+        margin-bottom: 50px;
+
+        img {
+            height: 250px;
+            aspect-ratio: 1;
+            margin: auto;
+            border-radius: 2rem;
+        }
+    }
 }
 
