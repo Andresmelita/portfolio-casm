@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
+import Slider from './components/Slider/Slider'
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
       <Navbar scrollHeight={scrollHeight}/>
       <Cover/>
       <About/>
-      <Portfolio/>
+      <Portfolio>
+      </Portfolio>
       <Skills/>
       <Footer/>
     </div>
