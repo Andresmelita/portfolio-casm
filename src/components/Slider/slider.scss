@@ -1,6 +1,28 @@
-.wrapper {
+// @media only screen and (min-width: 960px) {
+//     .carousel img {
+//         width: calc(100% /3);
+//     }
+// }
+
+
+// @media (min-width: 641px) and (max-width: 959px) {
+//     .carousel img {
+//         width: calc(100% /2);
+//     }
+// }
+
+// @media only screen and (max-width: 640px) {
+//     .carousel img {
+//         width: calc(100% /1);
+//     }
+// }
+
+.slider {
+    padding: 10px;
+    margin: auto;
     position: relative;
-    padding: 0px;
+    width: 80vw;
+    background-color: bisque;
 
     i {
         background-color: aliceblue;
@@ -15,50 +37,51 @@
         border-radius: 50%;
         color: black;
         position: absolute;
+        z-index: 2;
     }
 
-    i:first-child {
-        left: -23px;
-    }
-
-    i:last-child {
-        right: -23px;
-    }
-
-    .carousel {
+    .slider_static {
+        width: 100vw;
+        margin: auto;
+        max-width: 500px;
+        // aspect-ratio: 1.5;
+        overflow: hidden;
+        background-color: aqua;
         white-space: nowrap;
         cursor: pointer;
         font-size: 0px;
-        overflow: hidden;
+        width: calc(100% /5);
 
-        img {
-            height: 340px;
-            object-fit: cover;
-            margin-left: 14px;
-            top: 50%;
+        .slider_move {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            // transform: translateX(calc(-1 / 5*100%));
+            transition: transform 500ms ease;
+
+            .slider_img-container {
+                // width: calc(100%/5);
+                padding: 0px;
+            }
+
+            .slider_img {
+                // width: 100%;
+                // height: 100%;
+                // object-fit: contain;
+                height: 340px;
+                object-fit: cover;
+                margin-left: 0px;
+                top: 50%;
+            }
         }
-
-        img:first-child {
-            margin-left: 0px;
-        }
+    }
+    
+    .slider_prev {
+        left: 5px;
+    }
+    
+    .slider_next {
+        right: 5px;
     }
 }
 
-@media only screen and (min-width: 960px) {
-    .carousel img {
-        width: calc(100% /3);
-    }
-}
-
-
-@media (min-width: 641px) and (max-width: 959px) {
-    .carousel img {
-        width: calc(100% /2);
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .carousel img {
-        width: calc(100% /1);
-    }
-}

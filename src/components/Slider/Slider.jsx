@@ -1,53 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './slider.scss'
-import image1 from '../../media/01.jpg'
-import image2 from '../../media/02.jpg'
-import image3 from '../../media/03.jpg'
-import image4 from '../../media/04.jpg'
-import image5 from '../../media/05.jpg'
+import product from './images.js'
 
 const Slider = () => {
 
-    const carousel = document.querySelector(".carousel");
-    const arrowIcons = document.querySelector(".wrapper i")
+    const [indexImgs, setIndexImgs] = useState(0)
 
-    let isDragStart = false, prevPageX, prevScrollLeft;
-
-    const dragStart = (e) => {
-        // updatating global variables value on mouse down event
-        isDragStart = true;
-        prevPageX = e.pageX;
-        prevScrollLeft = carousel.scrollLeft;
+    const handlePrev = () => {
+        if (indexImgs-1 <0){
+            setIndexImgs(product.productImgs.length-1)
+        } else {
+        setIndexImgs(indexImgs-1)            
+        }
     }
 
-    const dragging = (e) => {
-        // scrolling images/carousel to left according to mouse pointer
-        if(!isDragStart) return;
-        e.preventDefault();
-        let positionDiff = e.pageX - prevPageX;
-        carousel.scrollLeft = prevScrollLeft - positionDiff;
+    const handleNext = () => {
+        if (indexImgs+1 > product.productImgs.length-1){
+            setIndexImgs(0)
+        } else {
+        setIndexImgs(indexImgs+1)            
+        }
     }
-
-    // const dragStop = (e) => {
-    //     isDragStart = false;
-    // }
-
-    carousel?.addEventListener("mousedown", dragStart);
-    carousel?.addEventListener("mousemove", dragging);
-    // carousel?.addEventListener("mouseup", dragStop);
 
     return (
-        <div className='wrapper'>
-            <i className="fa-solid fa-angle-left"></i>
-            <div className='carousel'>
-                <img src={image1} alt='img'/>
-                <img src={image2} alt='img'/>
-                <img src={image3} alt='img'/>
-                <img src={image4} alt='img'/>
-                <img src={image5} alt='img'/>
+
+        <div className='slider'>
+            {/* <button onClick={handlePrev} className='slider_prev'>◀</button> */}
+            <i onClick={handlePrev} className="fa-solid fa-angle-left slider_prev"></i>
+            <div className='slider_static'>
+                <div style={{transform: `translateX(calc(-${indexImgs} / 5*100%))`}} className='slider_move'>
+                    {
+                        product.productImgs.map(url => (
+                            <div key={url} className='slider_img-container'>
+                                <img className='slider_img' src={url} alt=""/>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
-            <i className="fa-solid fa-angle-right"></i>
+            <i onClick={handleNext} className="fa-solid fa-angle-right slider_next"></i>
+            {/* <button onClick={handleNext} className='slider_next'>▶</button> */}
         </div>
+
     )
 }
 
