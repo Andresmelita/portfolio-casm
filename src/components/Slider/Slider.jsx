@@ -4,7 +4,7 @@ import product from './images.js'
 
 const Slider = () => {
 
-    const [indexImgs, setIndexImgs] = useState(0)
+    const [indexImgs, setIndexImgs] = useState(1)
 
     const handlePrev = () => {
         if (indexImgs-1 <0){
