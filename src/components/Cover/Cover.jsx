@@ -1,5 +1,5 @@
 import React from 'react'
-import coverVideo from '../../media/coverVideo.mp4'
+import coverVideo from '../../media/coverVideo3.mp4'
 import './cover.scss'
 
 const Cover = () => {
