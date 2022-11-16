@@ -34,6 +34,14 @@ const Slider = () => {
                             <div key={url} className='slider_img-container'>
                                 <img className='slider_img' src={url} alt=""/>
                             </div>
+
+                        ))
+                    }
+                </div>
+                <div>
+                    {
+                        product.title.map(name => (
+                            <p key={name} className='slider_name'>{`${name}`}</p>
                         ))
                     }
                 </div>
