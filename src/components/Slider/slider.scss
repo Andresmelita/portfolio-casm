@@ -19,7 +19,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 80vw;
     overflow: hidden;
     margin: auto;
     height: auto;
@@ -64,6 +63,8 @@
 
             .slider_img-container {
                 padding: 0px;
+                margin-left: -26px;
+                margin-right: 26px;
                 
                 
                 .slider_img {
@@ -104,9 +105,10 @@
         width: calc(100%/3);
     }
 
-    .slider_img-container {
-        margin-left: -26px;
-        margin-right: 26px;
+    .slider {
+        width: 80vw;
+    }
+
 }
 
 
@@ -121,8 +123,9 @@
         width: calc(100%/1);
     }
 
-    .slider_img-container {
-        margin-left: -40px;
-        margin-right: 40px;
+    .slider {
+        width: 96vw;
+    }
+
 }
 
