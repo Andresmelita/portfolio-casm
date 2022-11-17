@@ -8,82 +8,49 @@ import image04 from '../../media/04.jpg'
 import image05 from '../../media/05.jpg'
 
 const Slider = () => {
+    const [framework, setFramework] = useState(1)
 
-    const [indexImgs, setIndexImgs] = useState(1)
-
-    const handlePrev = () => {
-        if (indexImgs-1 <0){
-            setIndexImgs(projects.images.length-1)
-        } else {
-        setIndexImgs(indexImgs-1)            
-        }
-    }
-
-    const handleNext = () => {
-        if (indexImgs+1 > projects.images.length-1){
-            setIndexImgs(0)
-        } else {
-        setIndexImgs(indexImgs+1)            
-        }
+    const changeRadioFramework = (e) => {
+        setFramework(e.target.value);
     }
 
     return (
 
-        <div className='slider'>
-            {/* <button onClick={handlePrev} className='slider_prev'>◀</button> */}
-            {/* <i onClick={handlePrev} className="fa-solid fa-angle-left slider_prev"></i> */}
-            {/* image slider start */}
-            <div className='slides'>
-                {/* <div style={{transform: `translateX(calc(-${indexImgs} / 5*100%))`}} className='slider_move'> */}
-                {/* radio buttons start */}
-                <input type='radio' className='radio_btn' id='radio1'/>
-                <input type='radio' className='radio_btn' id='radio2'/>
-                <input type='radio' className='radio_btn' id='radio3'/>
-                <input type='radio' className='radio_btn' id='radio4'/>
-                {/* radio buttons ends */}
-                    {/* {
-                        projects.images.map(url => (
-                            <div key={url} className='slider_img-container'>
-                                <img className='slider_img' src={url} alt=""/>
-                            </div>
-                        ))
-                    } */}
-                <div className='slide first'>
+        <div className='slider container-all'>
+            {/* <i onClick={handlePrev} className="fa-solid fa-angle-left slider_prev"></i>
+            <i onClick={handleNext} className="fa-solid fa-angle-right slider_next"></i> */}
+            <input type='radio' className='radio_btn image-slide' id='radio1' value='1' checked={framework == 1? true : false} onChange={changeRadioFramework}/>
+            <input type='radio' className='radio_btn image-slide' id='radio2' value='2' checked={framework == 2? true : false} onChange={changeRadioFramework}/>
+            <input type='radio' className='radio_btn image-slide' id='radio3' value='3' checked={framework == 3? true : false} onChange={changeRadioFramework}/>
+            <input type='radio' className='radio_btn image-slide' id='radio4' value='4' checked={framework == 4? true : false} onChange={changeRadioFramework}/>
+            <div className='slide'>
+                <div className='item-slide first'>
                     <img src={image01} alt=''/>
                 </div>
-                <div className='slide'>
+                <div className='item-slide'>
                     <img src={image02} alt=''/>
                 </div>
-                <div className='slide'>
+                <div className='item-slide'>
                     <img src={image03} alt=''/>
                 </div>
-                <div className='slide'>
+                <div className='item-slide'>
                     <img src={image04} alt=''/>
                 </div>
-                <div className='slide'>
-                    <img src={image05} alt=''/>
-                </div>
-                {/* slide images end */}
-                {/* automatic navigation start */}
-                <div className='navigation-auto'>
-                    <div className='auto-btn1'></div>
-                    <div className='auto-btn2'></div>
-                    <div className='auto-btn3'></div>
-                    <div className='auto-btn4'></div>
-                </div>
-                {/* automatic navigation end*/}
             </div>
-            {/* manual navigation start */}
-            <div className='navigation-manual'>
-                <label for='radio1' className='manual-btn'></label>
-                <label for='radio2' className='manual-btn'></label>
-                <label for='radio3' className='manual-btn'></label>
-                <label for='radio4' className='manual-btn'></label>
+            <div className='pagination'>
+                <label className='pagination-item item-1' for='radio1'>
+                    <img src={image01} alt=''/>
+                </label>
+                <label className='pagination-item item-2' for='radio2'>
+                    <img src={image02} alt=''/>
+                </label>
+                <label className='pagination-item item-3' for='radio3'>
+                    <img src={image03} alt=''/>
+                </label>
+                <label className='pagination-item item-4' for='radio4'>
+                    <img src={image04} alt=''/>
+                </label>
             </div>
-            {/* manual navigation end */}
-            {/* image slider end */}
-            {/* <i onClick={handleNext} className="fa-solid fa-angle-right slider_next"></i> */}
-            {/* <button onClick={handleNext} className='slider_next'>▶</button> */}
         </div>
     )
 }
