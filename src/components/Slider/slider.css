@@ -105,7 +105,7 @@ img {
     transform: translate3d(-20% *0, 0, 0) 2s;
 }
 #radio1:checked ~ .pagination .item-1{
-    background: rgb(8, 75, 119);
+    background: rgba(8, 75, 119, 0.712);
     
 }
 
@@ -115,7 +115,7 @@ img {
     transform: translate3d(calc(-20% * 1), 0, 0);
 }
 #radio2:checked ~ .pagination .item-2{
-    background: rgb(8, 75, 119);
+    background: rgba(8, 75, 119, 0.712);
 }
 
 /* *Imagen 03 */
@@ -124,7 +124,7 @@ img {
     transform: translate3d(calc(-20% * 2), 0, 0);
 }
 #radio3:checked ~ .pagination .item-3{
-    background: rgb(8, 75, 119);
+    background: rgba(8, 75, 119, 0.712);
 }
 
 /* *Imagen 04 */
@@ -133,7 +133,7 @@ img {
     transform: translate3d(calc(-20% * 3), 0, 0);
 }
 #radio4:checked ~ .pagination .item-4{
-    background: rgb(8, 75, 119);
+    background: rgba(8, 75, 119, 0.712);
 }
 
 /* .slider {
