@@ -8,6 +8,7 @@ import image04 from '../../media/04.jpg'
 import image05 from '../../media/05.jpg'
 
 const Slider = () => {
+    
     const [framework, setFramework] = useState(1)
 
     const changeRadioFramework = (e) => {
