@@ -19,10 +19,10 @@ const Slider = () => {
         <div className='slider container-all'>
             {/* <i onClick={handlePrev} className="fa-solid fa-angle-left slider_prev"></i>
             <i onClick={handleNext} className="fa-solid fa-angle-right slider_next"></i> */}
-            <input type='radio' className='radio_btn image-slide' id='radio1' value='1' checked={framework == 1? true : false} onChange={changeRadioFramework}/>
-            <input type='radio' className='radio_btn image-slide' id='radio2' value='2' checked={framework == 2? true : false} onChange={changeRadioFramework}/>
-            <input type='radio' className='radio_btn image-slide' id='radio3' value='3' checked={framework == 3? true : false} onChange={changeRadioFramework}/>
-            <input type='radio' className='radio_btn image-slide' id='radio4' value='4' checked={framework == 4? true : false} onChange={changeRadioFramework}/>
+            <input type='radio' className='radio_btn image-slide' id='radio1' value='1' checked={framework == 1? true : false} onChange={changeRadioFramework} hidden/>
+            <input type='radio' className='radio_btn image-slide' id='radio2' value='2' checked={framework == 2? true : false} onChange={changeRadioFramework} hidden/>
+            <input type='radio' className='radio_btn image-slide' id='radio3' value='3' checked={framework == 3? true : false} onChange={changeRadioFramework} hidden/>
+            <input type='radio' className='radio_btn image-slide' id='radio4' value='4' checked={framework == 4? true : false} onChange={changeRadioFramework} hidden/>
             <div className='slide'>
                 <div className='item-slide first'>
                     <img src={image01} alt=''/>
