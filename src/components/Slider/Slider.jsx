@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './slider.css'
-import projects from './projects.js'
 import image01 from '../../media/01.jpg'
 import image02 from '../../media/02.jpg'
 import image03 from '../../media/03.jpg'
@@ -39,16 +38,16 @@ const Slider = () => {
                 </div>
             </div>
             <div className='pagination'>
-                <label className='pagination-item item-1' for='radio1'>
+                <label className='pagination-item item-1' htmlFor='radio1'>
                     <img src={image01} alt=''/>
                 </label>
-                <label className='pagination-item item-2' for='radio2'>
+                <label className='pagination-item item-2' htmlFor='radio2'>
                     <img src={image02} alt=''/>
                 </label>
-                <label className='pagination-item item-3' for='radio3'>
+                <label className='pagination-item item-3' htmlFor='radio3'>
                     <img src={image03} alt=''/>
                 </label>
-                <label className='pagination-item item-4' for='radio4'>
+                <label className='pagination-item item-4' htmlFor='radio4'>
                     <img src={image04} alt=''/>
                 </label>
             </div>

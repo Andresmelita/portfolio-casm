@@ -9,8 +9,25 @@
     align-content: center;
     justify-content: center;
     color: rgb(255, 255, 255);
+
+    .portfolio-title {
+        padding: 10px;
+        gap: 0.6rem;
+        display: flex;
+        width: 300px;
+        margin-bottom: 30px;
+    
+        p {
+            color: rgb(4, 95, 117);
+        }
+    }
+    .portfolio-projects {
+        display: flex;
+        .portfolio-info {
+            background-color: black;
+        }
+    }
+            
 }
-.portfolio {
-    padding: 10px;
-    margin-bottom: 30px;
-}
+
+
