@@ -1,115 +1,136 @@
-.navbar {
-    position: fixed;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.267);
-    width: 100%;
-    padding-left: 50px;
-    font-size: 20px;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .scrolling {
-    background-color: black;
+    background-color: rgb(180, 71, 71);
     transition: all 0.6s ease;
 }
 
 .navbar-logo {
-    transform: rotate(90deg);
-    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
-    aspect-ratio: 1;
-    color: aliceblue;
-    cursor: pointer;
+    width: 75px;
+    margin-left: 5px;
+
+    .logo {
+        transform: rotate(30deg);
+        filter: drop-shadow(0px 0px 2px rgb(0, 0, 0));
+        aspect-ratio: 1;
+        color: aliceblue;
+        cursor: pointer;
+        padding-top: 10px;
+        margin-bottom: -50px;
+    }
 }
 
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
 
-
-@media screen and (min-width: 960px) {
     .navbar {
-        height: 60px;
-    }
-
-    .navbar-logo {
-        margin-top: 20px;
-        margin-left: -20px;
-        width: 80px;
-    }
-
-    .header_list {
         display: flex;
-        text-align: end;
-        width: 50%;
-        padding-left: 20px;
-        margin-left: 420px;
-        height: 60px;
-        grid-template-columns: repeat(4, 1fr);
-        color: aliceblue;
-        gap: 2.6rem;
-    }
-    
-    .header_item {
-        margin-top: 15px;
-    }
-    
-    .header_link {
-        color: aliceblue;
-        text-decoration: none;
-        transition: transform scale(1.2);
-    }
-    
-    .header_link:hover {
-        transition: transform scale(1.2);
-        color: antiquewhite;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.171);
+        align-items: center;
+        max-width: 1240px;
+        margin: auto;
+        height: 100%;
+        padding: 0 1rem;
     }
 }
 
-@media (min-width: 641px) and (max-width: 959px) {
-    .navbar {
-        height: 50px;
+.header .nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .nav-menu {
+    display: flex;
+}
+
+.header .nav-item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.header .nav-item a:hover {
+    padding-bottom: 0px;
+    border-bottom: 2px solid rgb(179, 245, 220);
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+
+        
+        .navbar {
+            max-width: 100%;
+
+            .navbar-logo {
+                width: 50px;
+                margin-left: 0;
+        
+                .logo {
+                    padding-top: 10px;
+                    margin-bottom: -5px;
+                }
+            }
+        
+        .hamburger {
+            display: block;
+        }
+        
+        .nav-menu {
+            position: fixed;
+            right: 0;
+            top: 60px;
+            flex-direction: column;
+            background-color: rgba(0,0,0,.9);
+            width: 30%;
+            height: 60vh;
+            z-index: 1000;
+            text-align: center;
+            transition: .3s;
+        }            
     }
-    .navbar-logo {
-        margin-top: 18px;
-        margin-left: -25px;
-        width: 60px;
+    }
+
+
+
+
+
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
     }
 }
 
-@media only screen and (max-width: 640px) {
-    .navbar {
-        height: 40px;
-    }
-    .navbar-logo {
-        margin-top: 15px;
-        margin-left: -30px;
-        width: 40px;
-    }
 
-    .header_list {
-        display: flex;
-        text-align: end;
-        font-size: 10px;
-        width: 200px;
-        padding-left: 0px;
-        margin-left: 0px;
-        height: 40px;
-        grid-template-columns: repeat(4, 1fr);
-        color: aliceblue;
-        gap: 0.7rem;
-    }
-    
-    .header_item {
-        margin-top: 15px;
-    }
-    
-    .header_link {
-        color: aliceblue;
-        text-decoration: none;
-        transition: transform scale(1.2);
-    }
-    
-    .header_link:hover {
-        transition: transform scale(1.2);
-        color: antiquewhite;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

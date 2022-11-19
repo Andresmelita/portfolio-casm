@@ -4,7 +4,7 @@ import './portfolio.scss'
 
 const Portfolio = () => {
     return (
-        <div className='portfolio-container'>
+        <div className='portfolio-container' id='portfolio'>
             <h1 className='portfolio-title'>What I <p> Do</p></h1>
             <div className='portfolio-projects'>
                 {/* <div className='portfolio-info'>
