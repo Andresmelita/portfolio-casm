@@ -11,8 +11,10 @@ const Navbar = ({scrollHeight}) => {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
-    const closeMenu = () => setClick(false)
+    const closeMenu = () => {
+        setClick(false)
 
+    }
 
     return (
         <div className='header'>
@@ -21,12 +23,12 @@ const Navbar = ({scrollHeight}) => {
                     <img src={logo} alt='' className='logo' onClick={toTheTop}/>
                 </a>
                 <div className='hamburguer' onClick={handleClick}>
-                    {click ? (<FaTimes size={25} style={{color: '#ffffff'}}/>)
+                    {click ? (<FaTimes size={25} style={{color: '#ffffff'}} onClick={closeMenu}/>)
                         : (<FaBars size={25} style={{color:'#ffffff'}}/>)}
                 </div>
-                <ul className={click ? 'nav-menu active': 'nav-menu'}>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <ol className='nav-item'>
-                        <a href="#cover" onClick={closeMenu}>Home</a>
+                        <a href="#home" onClick={closeMenu}>Home</a>
                     </ol>
                     <ol className='nav-item'>
                         <a href="#about" onClick={closeMenu}>About</a>
@@ -38,7 +40,7 @@ const Navbar = ({scrollHeight}) => {
                         <a href="#skills" onClick={closeMenu}>Skills</a>
                     </ol>
                     <ol className='nav-item'>
-                        <a href="#footer" onClick={closeMenu}>Contact</a>
+                        <a href="#contact" onClick={closeMenu}>Contact</a>
                     </ol>
                 </ul>
             </nav>

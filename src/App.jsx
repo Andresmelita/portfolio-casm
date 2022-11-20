@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
 import './App.css'
+import Contact from './components/Contact/Contact'
 
 function App() {
     
@@ -28,6 +29,7 @@ function App() {
       <About/>
       <Portfolio/>
       <Skills/>
+      <Contact/>
       <Footer/>
     </div>
   )
