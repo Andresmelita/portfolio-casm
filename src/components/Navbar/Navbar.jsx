@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import logo from '../../media/logo02.png'
+import logo from '../../media/logo03.png'
 import './navbar.scss'
 
 const Navbar = ({scrollHeight}) => {
