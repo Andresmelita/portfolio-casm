@@ -87,6 +87,22 @@
         }
         
         .nav-menu {
+            right: -100%;
+            position: fixed;
+            right: 0;
+            top: 60px;
+            flex-direction: column;
+            width: 30%;
+            height: 50vh;
+            border-top: none;
+            border-right: none;
+            border-bottom-left-radius: 20px;
+            text-align: center;
+            transition: 300ms;
+            right: -100%;
+        }
+
+        .nav-menu.active {
             position: fixed;
             right: 0;
             top: 60px;
@@ -101,10 +117,7 @@
             border-bottom-left-radius: 20px;
             text-align: center;
             transition: 300ms;
-        }
-
-        .nav-menu.active {
-            background-color: aqua;
+            right: 0;
         }
     }   
 }
