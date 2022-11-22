@@ -19,9 +19,9 @@ const Navbar = ({scrollHeight}) => {
     return (
         <div className='header'>
             <nav className='navbar'>
-                <a className='navbar-logo'>
+                <div className='navbar-logo'>
                     <img src={logo} alt='' className='logo' onClick={toTheTop}/>
-                </a>
+                </div>
                 <div className='hamburguer' onClick={handleClick}>
                     {click ? (<FaTimes size={25} style={{color: '#ffffff'}} onClick={closeMenu}/>)
                         : (<FaBars size={25} style={{color:'#ffffff'}}/>)}

@@ -2,25 +2,33 @@
     height: 100vh;
     width: 100%;
     object-fit: contain;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.822);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.205);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-direction: row;
 
     .sns-links {
         display: grid;
         grid-template-columns: auto;
         width: 80px;
-        gap: 2rem;
-        margin-left: -40px;
+        height: 300px;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+        gap: 3rem;
+        margin-top: 100px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
 
         .github, .linkedin, .instagram {
-            color: rgb(184, 215, 243);
+            color: rgb(255, 255, 255);
             font-size: 40px;
             margin: 0 auto;
-            padding-bottom: 10px;
+            padding: 0;
+            padding-left: 20px;
             border-bottom: 4px solid transparent;
         }
 
@@ -60,38 +68,45 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 4rem;
-    align-items: center;
-    align-content: center;
+    width: 70%;
+    align-content: space-between;
     margin: auto;
     padding: 30px;
     border-radius: 2rem;
-    // background-color: rgba(230, 230, 230, 0.055);
 
     .container-description {
         p {
-            font-size: 25px;
-            color: aliceblue;
+            font-size: 20px;
+            color: rgb(231, 231, 231);
         }
         .name {
             font-weight: bold;
             font-size: 60px;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(45deg, rgb(6, 86, 122),rgb(31, 104, 138), rgb(207, 190, 114), rgb(41, 115, 145));
+            background-image: linear-gradient(45deg, rgb(6, 120, 173),rgb(31, 104, 138), rgb(0, 89, 161), rgb(41, 115, 145));
             background-clip: text;
-            filter: drop-shadow(0 2px 0px rgb(0, 0, 0));
+            filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
             background-repeat: repeat;
             -webkit-background-clip: text;
             -moz-background-clip: text;
             -webkit-text-fill-color: transparent;
             -moz-text-fill-color: transparent; 
         }
+
+        .developer {
+            text-align: start;
+        }
+
+        .bachelor {
+            text-align: start;
+        }
     }
 
     .container-photo{
         margin: auto;
         padding: 10px;
-        background-image: linear-gradient(45deg, rgb(2, 19, 29), rgb(6, 81, 116), rgb(6, 81, 116), rgb(207, 190, 114), rgb(41, 115, 145));
+        background-image: linear-gradient(45deg, rgb(2, 19, 29), rgb(20, 60, 78), rgb(2, 59, 85), rgb(0, 31, 59), rgb(18, 60, 77));
         border-radius: 100%;
 
         img {
@@ -141,7 +156,7 @@
             position: absolute;
             top: 0;
             
-            color: #094a80;
+            color: #306d9e;
             font-size: 42px;
             line-height: 60px;
             

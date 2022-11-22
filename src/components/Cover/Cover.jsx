@@ -1,12 +1,14 @@
 import React from 'react'
 import coverVideo from '../../media/coverVideo3.mp4'
+import coverImage from '../../media/cover6.jpg'
 import me from '../../media/me.png'
 import './cover.scss'
 
 const Cover = () => {
     return (
         <div className='cover-container' id='home'>
-            <video className='video' src={coverVideo} autoPlay loop muted />
+            {/* <video className='video' src={coverVideo} autoPlay loop muted /> */}
+            <img className='video' src={coverImage} alt=''/>
             <div className='container'>
                 <div className='container-description'>
                     <div class="content">
@@ -24,8 +26,9 @@ const Cover = () => {
                     <p className='developer'>Developer Front-end</p>
                     <p className='bachelor'>Bachelor of Science in Applied Engineering</p>
                 </div>
-                <div className='container-photo'>
+                {/* <div className='container-photo'>
                     <img src={me} alt="" />
+                </div> */}
                 </div>
                 <div className='sns-links'>
                     <a href='https://www.linkedin.com/in/andresmelita/' target="_blank" rel='noreferrer'>
@@ -37,7 +40,6 @@ const Cover = () => {
                     <a href='https://www.instagram.com/andresmelita/' target="_blank" rel='noreferrer'>
                         <i className='fab fa-instagram instagram'></i>
                     </a>
-                </div>
             </div>
 
         </div>
