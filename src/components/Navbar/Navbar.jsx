@@ -40,7 +40,9 @@ const Navbar = ({scrollHeight}) => {
                         <a href="#skills" onClick={closeMenu}>Skills</a>
                     </ol>
                     <ol className='nav-item'>
-                        <a href="#contact" onClick={closeMenu}>Contact</a>
+                        <div className='contact'>
+                            <a href="#contact" onClick={closeMenu}>Contact</a>
+                        </div>
                     </ol>
                 </ul>
             </nav>

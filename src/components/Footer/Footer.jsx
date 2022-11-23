@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './footer.scss'
+import image from '../../media/cover6.jpg'
 
 const Footer = () => {
+
     return (
         <div className='footer' id='footer'>
+            <img src={image}/>
             <div className='footer-info'>
                 <h1>Andrés Salazar Melita</h1>
                 <p>Hello Nohelia 🍀</p>
