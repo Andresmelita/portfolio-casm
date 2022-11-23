@@ -14,27 +14,49 @@
         height: 300px;
         align-items: center;
         align-content: center;
-        margin: auto;
+        position: fixed;
+        right: 0px;
+        bottom: 100px;
         gap: 3rem;
         margin-top: 100px;
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
-        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 20px 0 rgba(0, 0, 0, 0.37);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 
         .github, .linkedin, .instagram {
+            filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.61));
             color: rgb(255, 255, 255);
             font-size: 40px;
             margin: 0 auto;
             padding: 0;
             padding-left: 20px;
             border-bottom: 4px solid transparent;
+            transition: all 0.3s ease-out linear transform;
         }
 
-        .github:hover, .linkedin:hover, .instagram:hover {
-            border-color: aliceblue;
+        .github:hover {
+            color: rgb(241, 226, 141);
+            filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
             transition: all 0.3s ease-out;
+            transform: scale(1.2);
+        }
+        
+        .linkedin:hover {
+            color: rgb(40, 128, 206);
+            filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+            transition: all 0.3s ease-out;
+            transform: scale(1.2);
+        }
+        
+        .instagram:hover {
+            color: rgb(187, 89, 89);
+            filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+            transition: all 0.3s ease-out;
+            transform: scale(1.2);
         }
     }
 }
@@ -71,13 +93,15 @@
     width: 70%;
     align-content: space-between;
     margin: auto;
-    padding: 30px;
+    padding: 70px;
     border-radius: 2rem;
 
     .container-description {
+
         p {
             font-size: 20px;
             color: rgb(231, 231, 231);
+            padding-left: 5px;
         }
         .name {
             font-weight: bold;
@@ -119,8 +143,25 @@
 
 }
 
-// Saludo animación
+//? Saludo animación //
+.content-button {
+    .button-cv {
+        background-color: #306d9e;
+        border-radius: 2rem;
+        color: #ecf0f1;
+        border: none;
+        height: 30px;
+        width: 140px;
+        font-size: 18px;
+        margin-top: 20px;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        cursor: pointer;
+    }
 
+    .button-cv:hover {
+        background-color: rgb(109, 28, 28);
+    }
+}
 .content {
     transform: translate(0%, 0%);
     height: 60px;

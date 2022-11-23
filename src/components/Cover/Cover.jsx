@@ -25,12 +25,15 @@ const Cover = () => {
                     <h1 className='name'>Andrés Salazar Melita</h1>
                     <p className='developer'>Developer Front-end</p>
                     <p className='bachelor'>Bachelor of Science in Applied Engineering</p>
+                    <form className='content-button'>
+                        <button className='button-cv'>Download CV</button>
+                    </form>
                 </div>
                 {/* <div className='container-photo'>
                     <img src={me} alt="" />
                 </div> */}
-                </div>
-                <div className='sns-links'>
+            </div>
+            <div className='sns-links'>
                     <a href='https://www.linkedin.com/in/andresmelita/' target="_blank" rel='noreferrer'>
                         <i className='fab fa-linkedin linkedin'></i>
                     </a>
@@ -41,7 +44,6 @@ const Cover = () => {
                         <i className='fab fa-instagram instagram'></i>
                     </a>
             </div>
-
         </div>
     )
 }

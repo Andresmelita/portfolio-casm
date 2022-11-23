@@ -5,7 +5,7 @@ img {
 
 .container-all {
     position: relative;
-    max-width: 1000px;
+    max-width: 600px; /*! to modified size of container*/
     width: 100%;
     border-radius: 10px;
     overflow: hidden;
