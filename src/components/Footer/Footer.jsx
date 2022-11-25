@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './footer.scss'
-import image from '../../media/cover6.jpg'
+import image from '../../media/footerCover.png'
 
 const Footer = () => {
 
