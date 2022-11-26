@@ -9,6 +9,7 @@ import './App.css'
 import Contact from './components/Contact/Contact'
 import Loading from './components/Loading/Loading'
 import { ClimbingBoxLoader } from 'react-spinners'
+import background from './media/cover6.jpg'
 
 function App() {
     
@@ -28,16 +29,16 @@ function App() {
     setLoading(true)
     setTimeout(() => {
         setLoading(false)
-    },2000)
+    }, 1800)
   },[])
 
   return (
-    <div className="App">
-      <Navbar scrollHeight={scrollHeight}/>
+    <div className='App'>
       {loading ? (
-          <ClimbingBoxLoader size={30} color={'#fff'} loading={loading}/>
+          <Loading/>
         ) : (
           <div>
+            <Navbar/>
             <Cover/>
             <About/>
             <Portfolio/>
