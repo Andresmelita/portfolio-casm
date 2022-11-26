@@ -1,7 +1,6 @@
 import React from 'react'
 import coverVideo from '../../media/coverVideo3.mp4'
 import coverImage from '../../media/cover6.jpg'
-import me from '../../media/me.png'
 import './cover.scss'
 
 const Cover = () => {
