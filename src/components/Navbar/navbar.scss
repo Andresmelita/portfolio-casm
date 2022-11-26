@@ -20,38 +20,6 @@
     transition: all 0.6s ease;
 }
 
-.navbar-logo {
-    width: 110px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: 0px;
-    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    // box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
-    // background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
-    // backdrop-filter: blur(10px);
-    // -webkit-backdrop-filter: blur(10px);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    .logo {
-        transform: rotate(0deg);
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.712));
-        aspect-ratio: 1;
-        color: aliceblue;
-        cursor: pointer;
-        padding: 36px;
-        margin-top: 46px;
-        margin-left: -120px;
-        transition: linear 1s transform;
-    }
-
-    .logo:hover {
-        transition: linear 400ms transform;
-        transform: scale(1.06);
-        cursor: pointer;
-    }
-}
-
 .header {
     position: fixed;
     height: 60px;
@@ -73,6 +41,39 @@
         margin: auto;
         height: 100%;
         padding: 0 1rem;
+
+        .navbar-logo {
+            height: 100%;
+            aspect-ratio: 1;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-left: 20px;
+            // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            // box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
+            // background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
+            // backdrop-filter: blur(10px);
+            // -webkit-backdrop-filter: blur(10px);
+            // border-bottom-left-radius: 10px;
+            // border-bottom-right-radius: 10px;
+        
+            .logo {
+                transform: rotate(0deg);
+                filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.712));
+                aspect-ratio: 1;
+                margin: auto;
+                width: 100%;
+                color: aliceblue;
+                cursor: pointer;
+                padding: 10px;
+                transition: linear 1s transform;
+            }
+        
+            .logo:hover {
+                transition: linear 400ms transform;
+                transform: scale(1.09);
+                cursor: pointer;
+            }
+        }
     }
 }
 

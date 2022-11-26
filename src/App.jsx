@@ -7,10 +7,13 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
 import './App.css'
 import Contact from './components/Contact/Contact'
+import Loading from './components/Loading/Loading'
+import { ClimbingBoxLoader } from 'react-spinners'
 
 function App() {
     
   const [scrollHeight, setScrollHeight] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   const handleScroll = () => {
       const position = window.pageYOffset;
@@ -21,16 +24,29 @@ function App() {
       window.addEventListener("scroll", handleScroll)
   }, [scrollHeight])
 
+  useEffect (()=>{
+    setLoading(true)
+    setTimeout(() => {
+        setLoading(false)
+    },2000)
+  },[])
 
   return (
     <div className="App">
       <Navbar scrollHeight={scrollHeight}/>
-      <Cover/>
-      <About/>
-      <Portfolio/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      {loading ? (
+          <ClimbingBoxLoader size={30} color={'#fff'} loading={loading}/>
+        ) : (
+          <div>
+            <Cover/>
+            <About/>
+            <Portfolio/>
+            <Skills/>
+            <Contact/>
+            <Footer/>
+          </div>
+        )
+      }
     </div>
   )
 }
