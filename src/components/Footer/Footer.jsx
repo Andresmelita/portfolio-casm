@@ -7,8 +7,8 @@ const Footer = () => {
 
     return (
         <div className='footer' id='footer'>
+            <img className='coverImg' src={image} alt=''/>
             <div className='Information'>
-                <img className='coverImg' src={image} alt=''/>
                 <div className='footer-info'>
                     <h1>Andrés Salazar Melita</h1>
                     <p>Hello Nohelia </p>
@@ -24,10 +24,11 @@ const Footer = () => {
                         Design by Andrés Salazar 🍀
                     </div>
                 </div>
+                <div className='contactEmail'>
+                    <FormContact/>
+                </div>
             </div>
-            <div className='contactEmail'>
-                <FormContact/>
-            </div>
+
         </div>
     )
 }
