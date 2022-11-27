@@ -11,7 +11,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 5000;
         transition: .3s ease-in;
 
         .nav-menu a {
@@ -33,11 +33,13 @@
             height: 60px;
             background-color: aqua;
             box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) );
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1)  );
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+            z-index: 200;
+            position: relative;
         }
     
         .navbar {
@@ -93,7 +95,7 @@
     .header .nav-item {
         padding: 1rem;
         font-weight: 500;
-        text-shadow: 1px 1px 6px black;
+        text-shadow: 2px 2px 5px black;
     }
     
     .contact {
@@ -106,7 +108,8 @@
     
     .header .nav-item a:hover {
         padding-bottom: 0px;
-        border-bottom: 2px solid rgb(0, 125, 197);
+        text-shadow: 1px 1px 2px black;
+        color: rgb(0, 125, 197);
     }
     
     .hamburger {
@@ -122,81 +125,69 @@
     }
 }
 
-@media all and (min-width: 768px) and (max-width: 1023) {
+
+
+
+
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+
+        
+        .navbar {
+            max-width: 100%;
+
+            .navbar-logo {
+                width: 50px;
+                margin-left: 0;
+        
+                .logo {
+                    padding-top: 10px;
+                    margin-bottom: -5px;
+                }
+            }
+        }
     
+        .hamburger {
+            display: block;
+        }
+
+.nav-menu {
+            right: -100%;
+            position: fixed;
+            right: 0;
+            top: 60px;
+            flex-direction: column;
+            width: 30%;
+            height: 50vh;
+            border-top: none;
+            border-right: none;
+            border-bottom-left-radius: 20px;
+            text-align: center;
+            transition: 300ms;
+            right: -100%;
+        }
+        .nav-menu.active {
+            position: fixed;
+            right: 0;
+            top: 60px;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.911);
+            width: 30%;
+            height: 50vh;
+            z-index: 1000;
+            border: solid rgb(51, 51, 51) 1px;
+            border-top: none;
+            border-right: none;
+            border-bottom-left-radius: 20px;
+            text-align: center;
+            transition: 300ms;
+            right: 0;
+        }
+    }   
 }
-
-@media all and (min-width: 480px) and (max-width: 76) {
-    
-}
-
-@media all and (max-width: 479) {
-    
-}
-
-
-
-
-
-// @media screen and (max-width:940px) {
-//     .header {
-//         max-width: 100%;
-//         background-color: rgba(0,0,0,.9);
-
-        
-//         .navbar {
-//             max-width: 100%;
-
-//             .navbar-logo {
-//                 width: 50px;
-//                 margin-left: 0;
-        
-//                 .logo {
-//                     padding-top: 10px;
-//                     margin-bottom: -5px;
-//                 }
-//             }
-//         }
-        
-//         .hamburger {
-//             display: block;
-//         }
-        
-//         .nav-menu {
-//             right: -100%;
-//             position: fixed;
-//             right: 0;
-//             top: 60px;
-//             flex-direction: column;
-//             width: 30%;
-//             height: 50vh;
-//             border-top: none;
-//             border-right: none;
-//             border-bottom-left-radius: 20px;
-//             text-align: center;
-//             transition: 300ms;
-//             right: -100%;
-//         }
-
-//         .nav-menu.active {
-//             position: fixed;
-//             right: 0;
-//             top: 60px;
-//             flex-direction: column;
-//             background-color: rgba(0, 0, 0, 0.911);
-//             width: 30%;
-//             height: 50vh;
-//             z-index: 1000;
-//             border: solid rgb(51, 51, 51) 1px;
-//             border-top: none;
-//             border-right: none;
-//             border-bottom-left-radius: 20px;
-//             text-align: center;
-//             transition: 300ms;
-//             right: 0;
-//         }
-//     }   
-// }
 
 
 

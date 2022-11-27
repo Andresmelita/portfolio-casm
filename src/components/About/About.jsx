@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.scss'
 import me from '../../media/myImage.png'
-import { FaAddressBook, FaGraduationCap, FaUserGraduate } from 'react-icons/fa'
+import { FaAddressBook, FaUserGraduate } from 'react-icons/fa'
 
 const About = () => {
     return (
@@ -11,8 +11,8 @@ const About = () => {
             </div>
             <div className='about-body'>
                 <div className='about-description'>
-                    <div className='myName'>Hi! I'm Andrés Salazar Melita</div>
-                    <div className='paragraph'>Hola! soy Desarrollador Front-End, inicié en programación en la universidad, mi primer lenguaje fue Python, luego de recibir mi título de Ingeniería inicié un bootcamp de Desarrollo Web, el cual tiene como principal enfoque Javascript. Actualmente me encuentro completando un módulo de desarrollo Back-End.</div>
+                    <div className='myName'>Hola !</div>
+                    <div className='paragraph'>Soy Desarrollador Front-End, inicié en programación en la universidad, mi primer lenguaje fue Python, luego de recibir mi título de Ingeniería inicié un bootcamp de Desarrollo Web, el cual tiene como principal enfoque Javascript. Actualmente me encuentro completando un módulo de desarrollo Back-End.</div>
                     <div className='paragraph'>Soy una persona organizada, dedicada y creativa, me encuentro constantemente aprendiendo, estaré siempre dispuesto a afrontar nuevos retos y desarrollar nuevas habilidades.</div>
                     <div className='about-information'>
                         <div className='information-education'>
@@ -23,7 +23,7 @@ const About = () => {
                                 <ol className='institution'>Academlo</ol>
                             </div>
                             <div className='education'>
-                                <li className='career'>Mining Engineering (Bachelor's Degree) </li>
+                                <li className='career'>Mining Engineering (Bachelor of Engineering) </li>
                                 <ol className='year'>2016 - 2021</ol>
                                 <ol className='institution'>Universidad de Santiago de Chile</ol>
                             </div>

@@ -9,6 +9,7 @@
 
     .sns-links {
         display: grid;
+        z-index: 5000;
         grid-template-columns: auto;
         width: 80px;
         height: 300px;
