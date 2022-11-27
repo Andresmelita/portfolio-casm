@@ -24,11 +24,10 @@ const Footer = () => {
                         Design by Andrés Salazar 🍀
                     </div>
                 </div>
-                <div className='contactEmail'>
-                    <FormContact/>
-                </div>
             </div>
-
+            <div className='contactEmail'>
+                <FormContact/>
+            </div>
         </div>
     )
 }

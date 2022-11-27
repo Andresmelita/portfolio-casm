@@ -1,6 +1,6 @@
 .footer {
     height: 100vh;
-    color: rgb(255, 255, 255);
+    color: rgb(160, 55, 55);
     padding-top: 0px;
     position: fixed;
     display: flex;
@@ -15,6 +15,7 @@
     width: 90%;
     bottom: 0;
     z-index: -20;
+    opacity: 0;
     left: 0;
     
     img {
@@ -28,6 +29,7 @@
         z-index: 10;
         color: aliceblue;
         background-color: aqua;
+        position: fixed;
         .footer-info {
             font-size: 35px;
             padding: 30px 0px 30px 50px;
