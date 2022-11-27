@@ -6,7 +6,6 @@ import Navbar from './components/Navbar/Navbar'
 import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
 import './App.css'
-import Contact from './components/Contact/Contact'
 import Loading from './components/Loading/Loading'
 import { ClimbingBoxLoader } from 'react-spinners'
 import background from './media/cover6.jpg'
@@ -29,7 +28,7 @@ function App() {
     setLoading(true)
     setTimeout(() => {
         setLoading(false)
-    }, 2000)
+    }, 1500)
   },[])
 
   return (
@@ -43,7 +42,6 @@ function App() {
             <About/>
             <Portfolio/>
             <Skills/>
-            <Contact/>
             <Footer/>
           </div>
         )
