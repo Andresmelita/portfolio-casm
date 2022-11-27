@@ -7,8 +7,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
 import './App.css'
 import Loading from './components/Loading/Loading'
-import { ClimbingBoxLoader } from 'react-spinners'
-import background from './media/cover6.jpg'
+import Contact from './components/Contact/Contact'
 
 function App() {
     
@@ -42,7 +41,6 @@ function App() {
             <About/>
             <Portfolio/>
             <Skills/>
-            <Footer/>
           </div>
         )
       }

@@ -1,9 +1,9 @@
-import image from '../../media/footerCover.jpg'
+import React from 'react'
+import coverImg from '../../media/cover6.jpg'
 
-const Footer = () => {
-
+const Contact = () => {
     return (
-        <div className='footer' id='footer'>
+        <div className='contact' id='contact'>
             <img className='coverImg' src={image} alt=''/>
             <div className='Information'>
                 <div className='footer-info'>
@@ -23,7 +23,8 @@ const Footer = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default Footer
+export default Contact

@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <div className='skills-container' id='skills'>
             <div className='skills-title'>
-                <h1 className='title'>Technologies</h1>
+                <h1 className='title'>Tecnologías</h1>
             </div>
             <div className='skillbox'>
                 <div className='skillbox-technologies'>

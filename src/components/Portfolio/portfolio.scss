@@ -45,6 +45,7 @@
     
         p {
             color: rgb(117, 192, 211);
+            font-size: 36px;
         }
     }
     .projects {
@@ -144,7 +145,7 @@
                 }
 
                 p {
-                    font-size: 17px;
+                    font-size: 16px;
                     padding-left: 14px;
                     padding-right: 18px;
                     padding-bottom: 60px;
@@ -171,14 +172,15 @@
                     width: 100%;
                     height: 100%;
                     padding-bottom: 0px;
-                    padding-left: 40%;
+                    padding-left: 44%;
                     gap: 0.6rem;
                     
                     button {
                         z-index: 2000;
                         align-content: flex-end;
+                        font-size: 11px;
                         cursor: pointer;
-                        width: 100px;
+                        width: 90px;
                         padding-bottom: 2px;
                         height: max-content;
                         color: aliceblue;

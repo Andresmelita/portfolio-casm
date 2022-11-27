@@ -28,20 +28,20 @@ const Navbar = ({scrollHeight}) => {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <ol className='nav-item'>
-                        <a href="#home" onClick={closeMenu}>Home</a>
+                        <a href="#home" onClick={closeMenu}>Inicio</a>
                     </ol>
                     <ol className='nav-item'>
-                        <a href="#about" onClick={closeMenu}>About</a>
+                        <a href="#about" onClick={closeMenu}>Sobre mi</a>
                     </ol>
                     <ol className='nav-item'>
-                        <a href="#portfolio" onClick={closeMenu}>Portfolio</a>
+                        <a href="#portfolio" onClick={closeMenu}>Portafolio</a>
                     </ol>
                     <ol className='nav-item'>
-                        <a href="#skills" onClick={closeMenu}>Skills</a>
+                        <a href="#skills" onClick={closeMenu}>Tecnologias</a>
                     </ol>
                     <ol className='nav-item'>
                         <div className='contact'>
-                            <a href="#contact" onClick={closeMenu}>Contact</a>
+                            <a href="#contact" onClick={closeMenu}>Contacto</a>
                         </div>
                     </ol>
                 </ul>
