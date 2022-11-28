@@ -31,12 +31,16 @@
         .contact-information {
             width: 50%;
             height: max-content;
-            padding: 30px;
+            padding: 90px;
+            padding-top: 400px;
+            line-height: 1rem;
+            font-family: 'Courier New', Courier, monospace;
 
             h3 {
                 color: aliceblue;
                 margin: auto;
                 text-align: center;
+                font-weight: 500;
                 font-size: 30px;
             }
 
@@ -45,7 +49,8 @@
                 margin: auto;
                 text-align: center;
                 padding-bottom: 20px;
-                font-size: 20px;
+                font-weight: 500;
+                font-size: 30px;
             }
         }
     }

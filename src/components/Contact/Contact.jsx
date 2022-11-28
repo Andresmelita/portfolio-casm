@@ -9,10 +9,6 @@ const Contact = () => {
             <img className='img-box' src={image} alt=''/>
             <div className='contact-box' id='contact'>
                 <FormContact/>
-                <div className='contact-information'>
-                    <h3>Informacion</h3>
-                    <p>Por completar</p>
-                </div>
             </div>
 
         </div>

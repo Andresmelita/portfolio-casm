@@ -2,8 +2,16 @@ import React from 'react'
 import coverVideo from '../../media/coverVideo3.mp4'
 import coverImage from '../../media/cover6.jpg'
 import './cover.scss'
+import { useState } from 'react'
 
 const Cover = () => {
+
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
+
     return (
         <div className='cover-container' id='home'>
             {/* <video className='video' src={coverVideo} autoPlay loop muted /> */}
@@ -27,6 +35,19 @@ const Cover = () => {
                     <form className='content-button'>
                         <button className='button-cv'>Download CV</button>
                     </form>
+                    {/* <div className='content-button'>
+							<div className='btn-download'>
+								{click ? (
+                                    <button className='content-button' name="btn-curriculum" id="download" onClick={handleClick}>
+                                            <p className='button-cv'>Descargado !</p>
+                                    </button>)
+									: (
+                                    <button className='content-button' name="btn-curriculum" id="download">
+                                        <p className='button-cv'>Download CV</p>
+                                    </button>)
+                                }
+							</div>
+					</div>  */}
                 </div>
                 {/* <div className='container-photo'>
                     <img src={me} alt="" />
