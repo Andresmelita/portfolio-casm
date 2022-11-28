@@ -1,26 +1,13 @@
 import image from '../../media/footerCover.jpg'
+import './footer.scss'
+import { GiClover } from 'react-icons/gi'
 
 const Footer = () => {
 
     return (
-        <div className='footer' id='footer'>
-            <img className='coverImg' src={image} alt=''/>
-            <div className='Information'>
-                <div className='footer-info'>
-                    <h1>Andrés Salazar Melita</h1>
-                    <p>Hello Nohelia </p>
-                </div>
-                <div className='footer-contact'>
-                    <h3>
-                        Contact me
-                        <p>And let's get down to work</p>
-                    </h3>
-                </div>
-                <div className='footer-sns'>
-                    <div className='design-by'>
-                        Design by Andrés Salazar 🍀
-                    </div>
-                </div>
+        <div className='footer'>
+            <div className='footer-information'>
+                <h2>&copy; 2022 - Andrés Salazar Melita <span>&#123;<GiClover className='clover'/>&#125;</span></h2>
             </div>
         </div>
     )

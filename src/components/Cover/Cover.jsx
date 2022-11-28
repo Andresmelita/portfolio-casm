@@ -7,17 +7,17 @@ const Cover = () => {
     return (
         <div className='cover-container' id='home'>
             {/* <video className='video' src={coverVideo} autoPlay loop muted /> */}
-            <img className='video' src={coverImage} alt=''/>
+            <img className='img-cover' src={coverImage} alt=''/>
             <div className='container'>
                 <div className='container-description'>
-                    <div class="content">
-                        <div class="content__container">
-                            <h2 class="content__container__text">Hello</h2>
-                            <ul class="content__container__list">
-                                <li class="content__container__list__item">world !</li>
-                                <li class="content__container__list__item">developer !</li>
-                                <li class="content__container__list__item">users !</li>
-                                <li class="content__container__list__item">everybody !</li>
+                    <div className="content">
+                        <div className="content__container">
+                            <h2 className="content__container__text">Hello</h2>
+                            <ul className="content__container__list">
+                                <li className="content__container__list__item">world !</li>
+                                <li className="content__container__list__item">developer !</li>
+                                <li className="content__container__list__item">users !</li>
+                                <li className="content__container__list__item">everybody !</li>
                             </ul>
                         </div>
                     </div>

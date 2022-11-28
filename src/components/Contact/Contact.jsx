@@ -1,27 +1,20 @@
 import React from 'react'
-import coverImg from '../../media/cover6.jpg'
+import image from '../../media/cover7.jpg'
+import './contact.scss'
+import FormContact from './FormContact'
 
 const Contact = () => {
     return (
-        <div className='contact' id='contact'>
-            <img className='coverImg' src={image} alt=''/>
-            <div className='Information'>
-                <div className='footer-info'>
-                    <h1>Andrés Salazar Melita</h1>
-                    <p>Hello Nohelia </p>
-                </div>
-                <div className='footer-contact'>
-                    <h3>
-                        Contact me
-                        <p>And let's get down to work</p>
-                    </h3>
-                </div>
-                <div className='footer-sns'>
-                    <div className='design-by'>
-                        Design by Andrés Salazar 🍀
-                    </div>
+        <div className='contact-container' >
+            <img className='img-box' src={image} alt=''/>
+            <div className='contact-box' id='contact'>
+                <FormContact/>
+                <div className='contact-information'>
+                    <h3>Informacion</h3>
+                    <p>Por completar</p>
                 </div>
             </div>
+
         </div>
 
     )

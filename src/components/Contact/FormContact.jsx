@@ -1,56 +1,93 @@
 import React from 'react'
 import './formContact.scss'
+import emailjs from '@emailjs/browser'
+import { useState } from 'react'
+import Swal from 'sweetalert2'
 
 const FormContact = () => {
+
+	const [messaggeOk, setMessaggeOk] = useState(false)
+
+	const Toast = Swal.mixin({
+		toast: true,
+		position: 'top',
+		color: '#ffffff',
+		background: '#041c38',
+		showConfirmButton: false,
+		timer: 3000,
+		timerProgressBar: true,
+		didOpen: (toast) => {
+			toast.addEventListener('mouseenter', Swal.stopTimer)
+			toast.addEventListener('mouseleave', Swal.resumeTimer)
+		}
+	})
+
+	const sendEmail = (event) => {
+		event.preventDefault();
+		emailjs.sendForm('service_ux8umva', 'template_6yo6cbe', event.target, '7PdH6bDCe03t6ONv7')
+			.then(response => {
+				console.log(response);
+				setSendClick(!sendClick)
+				Toast.fire({
+					icon: 'success',
+					title: 'Mensaje enviado !'
+				})
+				// Swal.fire({
+				// 	position: 'center',
+				// 	color: '#ffffff',
+				// 	background:'#000000',
+				// 	icon: 'success',
+				// 	title: 'Mensaje enviado !',
+				// 	showConfirmButton: false,
+				// 	timer: 2000
+				// })
+			})
+			.catch(error => console.log(error))
+		setMessaggeOk(!messaggeOk)
+	}
+
+	const [sendClick, setSendClick] = useState(false)
+
+	const hoverButton = () => {
+        setSendClick(false)
+    }
+
     return (
-        <div className="contact_form">
-			<div className="formulario">			
-                <h1>Formulario de contacto</h1>
-				<h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
-                <form action="submeter-formulario.php" method="post">				
-					<p>
-						<label for="nombre" className="colocar_nombre">Nombre<span className="obligatorio">*</span></label>
-						<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"/>
-					</p>
+		<div className='form-container'>
+			<div className="contact_form">
+				<div className="table">			
+					<h1 className='contact-me'>Contáctame</h1>
+					<form className='form-content' onSubmit={sendEmail}>				
+						<p>
+							<label htmlFor="name" className="insert-name">Nombre *</label>
+							<input type="text" name="user_name" id="name" required="required" placeholder="Escribe tu nombre"/>
+						</p>
 
-					<p>
-						<label for="email" className="colocar_email">Email<span className="obligatorio">*</span></label>
-						<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email"/>
-					</p>
-					<p>
-						<label for="telefone" className="colocar_telefono">
-							Teléfono
-						</label>
-						<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"/>
-					</p>		
+						<p>
+							<label htmlFor="email" className="insert-email">Email *</label>
+							<input type="email" name="user_email" id="email" required="required" placeholder="Escribe tu Email"/>
+						</p>
 
-					<p>
-						<label for="website" className="colocar_website">Sitio web</label>
-						<input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web"/>
-					</p>		
+						<p>
+							<label htmlFor="subject" className="insert-subject">Asunto *</label>
+							<input type="text" name="user_subject" id="subject" required="required" placeholder="Escribe un asunto"/>
+						</p>
 
-					<p>
-						<label for="asunto" className="colocar_asunto">
-							Asunto<span className="obligatorio">*</span>
-						</label>
-						<input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto"/>
-					</p>
-
-					<p>
-						<label for="mensaje" className="colocar_mensaje">
-							Mensaje<span className="obligatorio">*</span>
-						</label>
-						<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                    </p>	  		
-
-					<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-
-					<p className="aviso">
-						<span className="obligatorio"> *</span>los campos son obligatorios.
-					</p>					
-				</form>
-			</div>	
+						<p>
+							<label htmlFor="message" className="colocar_mensaje">Mensaje *</label>
+							<textarea name="user_message" className="insert-message" id="message" required="required" placeholder="Deja aquí tu comentario..."></textarea> 
+						</p>
+						<div className='button-container'>
+							<div className='btnSend'>
+								{sendClick ? (<button className='btn-formOne' type="submit" name="enviar_formulario" id="enviar" onClick={hoverButton}><p className='btn-text'>Enviado !</p></button>)
+									: (<button className='btn-formTwo'><p className='btn-text'>Enviar</p></button>)}
+							</div>
+						</div> 
+					</form>
+				</div>	
+			</div>
 		</div>
+
     )
 }
 

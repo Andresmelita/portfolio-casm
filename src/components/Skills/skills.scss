@@ -1,17 +1,16 @@
 .skills-container {
     width: 100%;
     padding-top: 90px;
-    height: 66vh;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
     align-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    // border-bottom-left-radius: 2rem;
+    // border-bottom-right-radius: 2rem;
     color: rgb(0, 0, 0);
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.747);
-    margin-bottom: 100vh;
+    // box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.747);
 
     .skills-title {
         padding: 0;
@@ -30,6 +29,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 58%;
+        height: 60%;
         align-items: center;
         align-items: center;
         padding: 20px;
@@ -125,6 +125,7 @@
         
             .skill-name {
                 font-size: 16px;
+                color: black;
             }
         }
     }

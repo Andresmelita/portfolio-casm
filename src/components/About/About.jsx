@@ -11,7 +11,9 @@ const About = () => {
             </div>
             <div className='about-body'>
                 <div className='about-description'>
-                    <div className='myName'>Hola !</div>
+                    <div className='myName'>
+                        Buen día ! <span className='text__text'></span>
+                    </div>
                     <div className='paragraph'>Soy Desarrollador Front-End, inicié en programación en la universidad, mi primer lenguaje fue Python, luego de recibir mi título de Ingeniería inicié un bootcamp de Desarrollo Web, el cual tiene como principal enfoque Javascript. Actualmente me encuentro completando un módulo de desarrollo Back-End.</div>
                     <div className='paragraph'>Soy una persona organizada, dedicada y creativa, me encuentro constantemente aprendiendo, estaré siempre dispuesto a afrontar nuevos retos y desarrollar nuevas habilidades.</div>
                     <div className='about-information'>

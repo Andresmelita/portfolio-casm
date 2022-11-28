@@ -1,96 +1,42 @@
+
 .footer {
-    // height: 100vh;
-    // padding-top: 0px;
-    // display: flex;
-    // position: fixed;
-    // z-index: -5000;
-    // flex-wrap: wrap;
-    // flex-direction: center;
-    // align-items: center;
-    // padding: auto;
-    // margin: auto;
-    // flex-direction: column;
-    // width: 100%;
-    // bottom: 0;
-    // left: 0;
-    
-    img {
-        background: no-repeat center center;
-        background-size: cover;
-        width: 100vw;
-        // z-index: -5000;
-    }
+    height: 300px;
+    padding-top: 0px;
+    display: flex;
+    position: fixed;
+    z-index: -100;
+    // background-position: center;
+    // background-size: cover;
+    // background-attachment: fixed;
+    flex-wrap: wrap;
+    flex-direction: center;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #041c38;
 
-    .information {
-        z-index: 10;
-        background-color: aqua;
-        position: fixed;
-        color: blue;
+    .footer-information {
+        h2 {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            padding: 18px;
+            font-weight: 300;
+            margin-top: 240px;
 
-        .footer-info {
-            font-size: 35px;
-            padding: 30px 0px 30px 50px;
-            width: 70%;
-            margin: auto;
-            bottom: 400px;
-            left: 300px;
-            align-items: center;
-            color: rgb(6, 46, 82);
-            color: blue;
-        
-            h1 {
-                padding-bottom: 15px;
-                color: blue;
+            span {
+                font-weight: bold;
+
+                .clover {
+                    margin-bottom: -3.4px;
+                }
             }
         }
-        
-        .footer-contact {
-            font-size: 20px;
-            align-items: center;
-            left: 300px;
-            bottom: 300px;
-            color: blue;
-            margin: auto;
-            padding: 100px 0 30px 50px;
-            width: 60%;
-            margin: 0 auto;
-            p {
-                font-size: 18px;
-                color: blue;
-            }
-        }
-        
-        .footer-sns {
-            width: 70%;
-            bottom: 40px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            display: grid;
-            text-align: center;
-            // grid-template-columns: 2fr 1fr;
-            align-items: center;
-
-            .design-by {
-                font-size: 18px;
-                padding-left: 50px;
-                color: rgb(22, 63, 99);
-            }
-        }
-        
     }
 }
-
-// .footer::before {
-//     content: "";
-//     z-index: 0;
-//     background-color: rgba(0, 0, 0, 0.39);
-//     top:0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-// }
-
 
 
 

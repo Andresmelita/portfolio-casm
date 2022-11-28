@@ -61,9 +61,8 @@
         z-index: 100;
 
         .portfolio-projects {
-            border: solid 2px rgba(240, 248, 255, 0);
+            border: solid 2px rgba(35, 106, 169, 0);
             transition: 1s ease;
-
 
             .hamburguer {
                 z-index: 4000;
@@ -89,21 +88,28 @@
             .project-img {
                 z-index: 100;
                 position: absolute;
-                width: 100%;
-                height: 100%;
+                width: 99%;
+                height: 99%;
                 bottom: 0px;
                 transition: 1s;
                 transform: scale(1) rotate(0deg);
+                border: solid 2px rgb(0, 0, 0);
+                border-radius: 12px;
             }
 
             .project-img:hover {
                 transform: scale(1.4) rotate(8deg);
+                border: solid 2px rgb(0, 0, 0);
             }
 
             .project-information {
                 z-index: 1000;
                 background-color: rgba(0, 0, 0, 0.795);
+                border: solid 2px rgb(0, 0, 0);
                 text-shadow: 0px 5px 5px black;
+                backdrop-filter: blur(1px);
+                -webkit-backdrop-filter: blur(1px);
+                border-radius: 10px;
                 width: 100%;
                 height: 100%;
                 padding: 20px;
@@ -113,15 +119,15 @@
                 align-content: center;
 
                 .line {
-                    border-radius: 10px;
+                    border-radius: 8px;
                     border: solid rgba(255, 255, 255, 0.671) 2px;
                     height: 215px;
                     width: 405px;
                     font-weight: 700;
                     padding-top: 10px;
                     padding-left: 10px;
-                    margin-left: -10px;
-                    margin-top: -10px;
+                    margin-left: -12px;
+                    margin-top: -12px;
                     position: absolute;
                     opacity: 1;
                 }
@@ -167,21 +173,20 @@
                 .buttons-container {
                     display: flex;
                     align-items: flex-end;
-
                     flex-wrap: wrap;
                     width: 100%;
                     height: 100%;
                     padding-bottom: 0px;
-                    padding-left: 44%;
+                    padding-left: 50%;
                     gap: 0.6rem;
                     
-                    button {
+                    .btn-portfolio {
                         z-index: 2000;
                         align-content: flex-end;
-                        font-size: 11px;
+                        font-size: 13px;
                         cursor: pointer;
                         width: 90px;
-                        padding-bottom: 2px;
+                        padding-bottom: 4px;
                         height: max-content;
                         color: aliceblue;
                         border-radius: 16px;
@@ -191,7 +196,7 @@
                         transition: 500ms;
                     }
     
-                    button:hover {
+                    .btn-portfolio:hover {
                         background-color: rgb(0, 0, 0);
                     }
                 }
@@ -200,6 +205,7 @@
             .project-information.active {
                 z-index: 1000;
                 background-color: rgba(0, 0, 0, 0.795);
+                border: solid 2px white;
                 width: 100%;
                 height: 100%;
                 padding: 20px;
@@ -227,10 +233,14 @@
 
         .portfolio-projects:hover {
             transform: scale(1.04);
+            border: solid 3px rgba(251, 248, 248, 0.761);
+            border-radius: 16px;
         }
 
         .portfolio-projects:hover .project-img {
             transform: scale(1.4) rotate(8deg);
+
+            border: solid 3px rgb(0, 0, 0);
         }
     }    
 }

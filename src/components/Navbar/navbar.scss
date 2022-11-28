@@ -1,13 +1,12 @@
 @media only screen and (min-width: 1024px) {
 
     .scrolling {
-        background-color: rgb(180, 71, 71);
         transition: all 0.6s ease;
     }
     
     .header {
         position: fixed;
-        height: 50px;
+        height: 40px;
         width: 100%;
         top: 0;
         left: 0;
@@ -16,7 +15,7 @@
 
         .nav-menu a {
             color: #ffffff;
-            font-size: 19px;
+            font-size: 16px;
             text-decoration: none;
         }
         
@@ -30,12 +29,11 @@
             width: max-content;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            height: 50px;
-            background-color: aqua;
+            height: 40px;
             box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1)  );
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             border-right: 0.5px solid rgba(255, 255, 255, 0.1);
             z-index: 200;
@@ -52,17 +50,33 @@
     
             .navbar-logo {
                 height: 150%;
-                aspect-ratio: 1;
+                width: 93px;
                 margin-left: 50px;
-                margin-top: 140px;
-                margin-left: 70px;
+                margin-top: 60px;
+                margin-left: 60px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+
+                .character {
+                    font-size: 54px;
+                    height: 100%;
+                    position: absolute;
+                    text-shadow: 1px 1px 3px black;
+                    width: 100%;
+                    font-weight: 400;
+                    word-spacing: 2.4rem;
+                    margin-top: -4px;
+                    margin-left: 1px;
+                }
             
                 .logo {
                     transform: rotate(0deg);
                     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.712));
                     aspect-ratio: 1;
                     margin: auto;
-                    width: 100%;
+                    width: 70px;
                     color: aliceblue;
                     cursor: pointer;
                     padding: 10px;

@@ -8,6 +8,8 @@ import Skills from './components/Skills/Skills'
 import './App.css'
 import Loading from './components/Loading/Loading'
 import Contact from './components/Contact/Contact'
+import FormContact from './components/Contact/FormContact'
+import CoverFooter from './components/Cover/CoverFooter'
 
 function App() {
     
@@ -41,6 +43,9 @@ function App() {
             <About/>
             <Portfolio/>
             <Skills/>
+            <Contact/>
+            <CoverFooter/>
+            <Footer/>
           </div>
         )
       }

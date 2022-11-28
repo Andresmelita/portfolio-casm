@@ -102,8 +102,8 @@ const Portfolio = () => {
                             <h2 className='line'><TbPokeball className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Pokedex</a></h2>
                             <p>Consulta la información de tu Pokémon favorito!, puedes filtrar por tipo o buscar directamente por el nombre en esta enciclopedia.</p>
                             <div className='buttons-container'>
-                                <button onClick={toWeb1}>Ver Proyecto</button>
-                                <button onClick={toGitHub1}>Repositorio</button>
+                                <button className='btn-portfolio' onClick={toWeb1}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub1}>Repositorio</button>
                             </div>
                     </div>
                     <img className='project-img' src={project1} alt='' id='project1'/>
@@ -120,8 +120,8 @@ const Portfolio = () => {
                             <h2 className='line'><TiWeatherPartlySunny className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Weather App</a></h2>
                             <p>Activa tu ubicación para conocer el clima actual en tu zona.</p>
                             <div className='buttons-container'>
-                                <button onClick={toWeb2}>Ver Proyecto</button>
-                                <button onClick={toGitHub2}>Repositorio</button>
+                                <button className='btn-portfolio' onClick={toWeb2}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub2}>Repositorio</button>
                             </div>
                     </div>
                     <img className='project-img' src={project2} alt='' id='project2'/>
@@ -138,8 +138,8 @@ const Portfolio = () => {
                             <h2 className='line'><RiAliensLine className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Rick & Morty App</a></h2>
                             <p>Página que muestra diferentes personajes de la serie según la dimensión o el universo al que pertenezcan.</p>
                             <div className='buttons-container'>
-                                <button onClick={toWeb3}>Ver Proyecto</button>
-                                <button onClick={toGitHub3}>Repositorio</button>
+                                <button className='btn-portfolio' onClick={toWeb3}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub3}>Repositorio</button>
                             </div>
                     </div>
                     <img className='project-img' src={project3} alt='' id='project3'/>
@@ -156,8 +156,8 @@ const Portfolio = () => {
                             <h2 className='line'><ImPen className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Quote Box</a></h2>
                             <p>Conoce diversas frases célebres de grandes autores y personajes a lo largo de la historia, éstas se mostrarán aleatoriamente.</p>
                             <div className='buttons-container'>
-                                <button onClick={toWeb4}>Ver Proyecto</button>
-                                <button onClick={toGitHub4}>Repositorio</button>
+                                <button className='btn-portfolio' onClick={toWeb4}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub4}>Repositorio</button>
                             </div>
                     </div>
                     <img className='project-img' src={project4} alt='' id='project4'/>

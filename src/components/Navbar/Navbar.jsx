@@ -20,6 +20,7 @@ const Navbar = ({scrollHeight}) => {
         <div className='header'>
             <nav className='navbar'>
                 <div className='navbar-logo'>
+                    <p className='character'>&#123; &#125;</p>
                     <img src={logo} alt='' className='logo' onClick={toTheTop}/>
                 </div>
                 <div className='hamburguer' onClick={handleClick}>
