@@ -38,8 +38,8 @@ const Cover = () => {
                     </form> */}
                     <div className='content-button'>
 							<div className='btn-download'>
-								{clickOne ? (<button className='content-buttonOne' onClick={hoverClickOne}><p className='button-cvOne'>Descargado !</p></button>)
-									: (<button className='content-buttonOne' name="btn-curriculum" id="download" onClick={handleClickOne} ><p><a className='button-cvTwo' target='_blank' href={cv}>Descargar CV</a></p></button>)}
+								{clickOne ? (<div className='content-buttonOne' onClick={hoverClickOne}><p className='button-cvOne'>Descargado !</p></div>)
+									: (<div className='content-buttonOne' name="btn-curriculum" id="download" onClick={handleClickOne} ><p><a className='button-cvTwo' target='_blank' href={cv}>Descargar CV</a></p></div>)}
 							</div>
 					</div> 
                 </div>

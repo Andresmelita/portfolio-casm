@@ -1,132 +1,544 @@
-.skills-container {
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-bottom: -50px;
-    padding-bottom: 0px;
-    position: relative;
-    z-index: 10;
-    height: 70vh;
-    background-color: rgb(255, 255, 255);
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: rgb(0, 0, 0);
-
-    .skills-title {
-        padding: 0;
-        margin-left: -170px;
-
-        .title {
-            text-align: start;
-            font-size: 36px;
-            width: 300px;
-            color: rgb(29, 71, 126);
-        }
-    }
-
-    .skillbox {
+//! APARTADO 1
+@media screen and (min-width: 1024px) {
+    .skills-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-bottom: -50px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: 10;
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 58%;
-        height: 60%;
-        align-items: center;
-        align-items: center;
-        padding: 20px;
-        margin: auto;
-        gap: 4rem;
+        color: rgb(0, 0, 0);
     
-        .skillbox-technologies {
-            text-align: center;
+        .skills-title {
+            padding: 0;
+            margin-left: -170px;
+    
+            .title {
+                text-align: start;
+                font-size: 36px;
+                width: 300px;
+                color: rgb(29, 71, 126);
+            }
+        }
+    
+        .skillbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 58%;
+            height: 60%;
+            align-items: center;
+            align-items: center;
+            padding: 20px;
             margin: auto;
-            aspect-ratio: 1;
-            width: 76px;
+            gap: 4rem;
         
-            .skill-icon {
+            .skillbox-technologies {
+                text-align: center;
                 margin: auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
                 aspect-ratio: 1;
-                width: 60px;
-                transform: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
-            }
-
-            .skill-icon:hover {
-                filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
-                transition: all 0.2s ease-out;
-                transform: scale(1.1);
-            }
-
-            .nodeIcon {
-                width: 84px;
-            }
-
-            .reactIcon {
-                animation-name: girarb;
-                animation-duration: 20s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-            }
-
-            @keyframes girarb {
-                from {
-                    transform: rotate(0deg);
-                } to {
-                    transform: rotate(360deg);
+                width: 76px;
+            
+                .skill-icon {
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    aspect-ratio: 1;
+                    width: 60px;
+                    transform: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                }
+    
+                .skill-icon:hover {
+                    filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                    transition: all 0.2s ease-out;
+                    transform: scale(1.1);
+                }
+    
+                .nodeIcon {
+                    width: 84px;
+                }
+    
+                .reactIcon {
+                    animation-name: girarb;
+                    animation-duration: 20s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+    
+                @keyframes girarb {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+    
+                .javascriptIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .htmlIcon:hover {
+                    color: rgb(248, 106, 39);
+                }
+                .cssIcon:hover {
+                    color: rgb(36, 71, 230);
+                }
+                .reactIcon:hover {
+                    color: rgb(71, 212, 255);
+                    filter: drop-shadow(1.5px 1.5px 0.6px rgb(0, 0, 0));
+                }
+                .reduxIcon:hover {
+                    color: rgb(112, 42, 190);
+                }
+                .expressIcon:hover {
+                    color: rgb(143, 143, 143);
+                }
+                .sequelizeIcon:hover {
+                    color: rgb(69, 141, 250);
+                    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .reactRouterIcon:hover {
+                    color: rgb(219, 37, 37);
+                }
+                .nodeIcon:hover {
+                    color: rgb(96, 184, 46);
+                }
+                .postgresqlIcon:hover {
+                    filter: invert(43%) sepia(93%) saturate(368%) hue-rotate(160deg) brightness(89%) contrast(95%) drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .sassIcon:hover {
+                    color: rgb(224, 91, 184);
+                }
+                .pythonIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .gitIcon:hover {
+                    color: rgb(248, 81, 39);
+                }
+                .nodemonIcon:hover {
+                    color: rgb(66, 184, 62);
+                }
+            
+                .skill-name {
+                    font-size: 16px;
+                    color: black;
                 }
             }
-
-            .javascriptIcon:hover {
-                color: rgb(231, 217, 89);
+        }
+    }
+}
+//! Apartado 2
+@media (min-width: 768px) and (max-width: 1023px) {
+    .skills-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-bottom: -50px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: 10;
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: rgb(0, 0, 0);
+    
+        .skills-title {
+            padding: 0;
+            margin-left: -170px;
+    
+            .title {
+                text-align: start;
+                font-size: 36px;
+                width: 300px;
+                color: rgb(29, 71, 126);
             }
-            .htmlIcon:hover {
-                color: rgb(248, 106, 39);
-            }
-            .cssIcon:hover {
-                color: rgb(36, 71, 230);
-            }
-            .reactIcon:hover {
-                color: rgb(71, 212, 255);
-                filter: drop-shadow(1.5px 1.5px 0.6px rgb(0, 0, 0));
-            }
-            .reduxIcon:hover {
-                color: rgb(112, 42, 190);
-            }
-            .expressIcon:hover {
-                color: rgb(143, 143, 143);
-            }
-            .sequelizeIcon:hover {
-                color: rgb(69, 141, 250);
-                filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
-            }
-            .reactRouterIcon:hover {
-                color: rgb(219, 37, 37);
-            }
-            .nodeIcon:hover {
-                color: rgb(96, 184, 46);
-            }
-            .postgresqlIcon:hover {
-                filter: invert(43%) sepia(93%) saturate(368%) hue-rotate(160deg) brightness(89%) contrast(95%) drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
-            }
-            .sassIcon:hover {
-                color: rgb(224, 91, 184);
-            }
-            .pythonIcon:hover {
-                color: rgb(231, 217, 89);
-            }
-            .gitIcon:hover {
-                color: rgb(248, 81, 39);
-            }
-            .nodemonIcon:hover {
-                color: rgb(66, 184, 62);
-            }
+        }
+    
+        .skillbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 58%;
+            height: 60%;
+            align-items: center;
+            align-items: center;
+            padding: 20px;
+            margin: auto;
+            gap: 4rem;
         
-            .skill-name {
-                font-size: 16px;
-                color: black;
+            .skillbox-technologies {
+                text-align: center;
+                margin: auto;
+                aspect-ratio: 1;
+                width: 76px;
+            
+                .skill-icon {
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    aspect-ratio: 1;
+                    width: 60px;
+                    transform: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                }
+    
+                .skill-icon:hover {
+                    filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                    transition: all 0.2s ease-out;
+                    transform: scale(1.1);
+                }
+    
+                .nodeIcon {
+                    width: 84px;
+                }
+    
+                .reactIcon {
+                    animation-name: girarb;
+                    animation-duration: 20s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+    
+                @keyframes girarb {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+    
+                .javascriptIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .htmlIcon:hover {
+                    color: rgb(248, 106, 39);
+                }
+                .cssIcon:hover {
+                    color: rgb(36, 71, 230);
+                }
+                .reactIcon:hover {
+                    color: rgb(71, 212, 255);
+                    filter: drop-shadow(1.5px 1.5px 0.6px rgb(0, 0, 0));
+                }
+                .reduxIcon:hover {
+                    color: rgb(112, 42, 190);
+                }
+                .expressIcon:hover {
+                    color: rgb(143, 143, 143);
+                }
+                .sequelizeIcon:hover {
+                    color: rgb(69, 141, 250);
+                    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .reactRouterIcon:hover {
+                    color: rgb(219, 37, 37);
+                }
+                .nodeIcon:hover {
+                    color: rgb(96, 184, 46);
+                }
+                .postgresqlIcon:hover {
+                    filter: invert(43%) sepia(93%) saturate(368%) hue-rotate(160deg) brightness(89%) contrast(95%) drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .sassIcon:hover {
+                    color: rgb(224, 91, 184);
+                }
+                .pythonIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .gitIcon:hover {
+                    color: rgb(248, 81, 39);
+                }
+                .nodemonIcon:hover {
+                    color: rgb(66, 184, 62);
+                }
+            
+                .skill-name {
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+//! APARTADO 3
+@media (min-width: 480px) and (max-width: 767px) {
+    .skills-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-bottom: -50px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: 10;
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: rgb(0, 0, 0);
+    
+        .skills-title {
+            padding: 0;
+            margin-left: -170px;
+    
+            .title {
+                text-align: start;
+                font-size: 36px;
+                width: 300px;
+                color: rgb(29, 71, 126);
+            }
+        }
+    
+        .skillbox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 58%;
+            height: 60%;
+            align-items: center;
+            align-items: center;
+            padding: 20px;
+            margin: auto;
+            gap: 4rem;
+        
+            .skillbox-technologies {
+                text-align: center;
+                margin: auto;
+                aspect-ratio: 1;
+                width: 76px;
+            
+                .skill-icon {
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    aspect-ratio: 1;
+                    width: 60px;
+                    transform: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                }
+    
+                .skill-icon:hover {
+                    filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                    transition: all 0.2s ease-out;
+                    transform: scale(1.1);
+                }
+    
+                .nodeIcon {
+                    width: 84px;
+                }
+    
+                .reactIcon {
+                    animation-name: girarb;
+                    animation-duration: 20s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+    
+                @keyframes girarb {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+    
+                .javascriptIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .htmlIcon:hover {
+                    color: rgb(248, 106, 39);
+                }
+                .cssIcon:hover {
+                    color: rgb(36, 71, 230);
+                }
+                .reactIcon:hover {
+                    color: rgb(71, 212, 255);
+                    filter: drop-shadow(1.5px 1.5px 0.6px rgb(0, 0, 0));
+                }
+                .reduxIcon:hover {
+                    color: rgb(112, 42, 190);
+                }
+                .expressIcon:hover {
+                    color: rgb(143, 143, 143);
+                }
+                .sequelizeIcon:hover {
+                    color: rgb(69, 141, 250);
+                    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .reactRouterIcon:hover {
+                    color: rgb(219, 37, 37);
+                }
+                .nodeIcon:hover {
+                    color: rgb(96, 184, 46);
+                }
+                .postgresqlIcon:hover {
+                    filter: invert(43%) sepia(93%) saturate(368%) hue-rotate(160deg) brightness(89%) contrast(95%) drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .sassIcon:hover {
+                    color: rgb(224, 91, 184);
+                }
+                .pythonIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .gitIcon:hover {
+                    color: rgb(248, 81, 39);
+                }
+                .nodemonIcon:hover {
+                    color: rgb(66, 184, 62);
+                }
+            
+                .skill-name {
+                    font-size: 16px;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+//!APARTADO 4
+@media screen and (max-width: 479px) {
+    .skills-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        margin-bottom: -50px;
+        padding-bottom: 0px;
+        position: relative;
+        z-index: 10;
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: rgb(0, 0, 0);
+    
+        .skills-title {
+            padding: 0;
+            margin-left: -170px;
+    
+            .title {
+                text-align: start;
+                font-size: 36px;
+                width: 300px;
+                color: rgb(29, 71, 126);
+            }
+        }
+    
+        .skillbox {
+            display: flex;
+            display: none; //!NONENONE
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 58%;
+            height: 60%;
+            align-items: center;
+            align-items: center;
+            padding: 20px;
+            margin: auto;
+            gap: 4rem;
+        
+            .skillbox-technologies {
+                text-align: center;
+                margin: auto;
+                aspect-ratio: 1;
+                width: 76px;
+            
+                .skill-icon {
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    aspect-ratio: 1;
+                    width: 60px;
+                    transform: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                }
+    
+                .skill-icon:hover {
+                    filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                    transition: all 0.2s ease-out;
+                    transform: scale(1.1);
+                }
+    
+                .nodeIcon {
+                    width: 84px;
+                }
+    
+                .reactIcon {
+                    animation-name: girarb;
+                    animation-duration: 20s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+    
+                @keyframes girarb {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+    
+                .javascriptIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .htmlIcon:hover {
+                    color: rgb(248, 106, 39);
+                }
+                .cssIcon:hover {
+                    color: rgb(36, 71, 230);
+                }
+                .reactIcon:hover {
+                    color: rgb(71, 212, 255);
+                    filter: drop-shadow(1.5px 1.5px 0.6px rgb(0, 0, 0));
+                }
+                .reduxIcon:hover {
+                    color: rgb(112, 42, 190);
+                }
+                .expressIcon:hover {
+                    color: rgb(143, 143, 143);
+                }
+                .sequelizeIcon:hover {
+                    color: rgb(69, 141, 250);
+                    filter: drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .reactRouterIcon:hover {
+                    color: rgb(219, 37, 37);
+                }
+                .nodeIcon:hover {
+                    color: rgb(96, 184, 46);
+                }
+                .postgresqlIcon:hover {
+                    filter: invert(43%) sepia(93%) saturate(368%) hue-rotate(160deg) brightness(89%) contrast(95%) drop-shadow(2px 2px 0.5px rgba(0, 0, 0, 0.699));
+                }
+                .sassIcon:hover {
+                    color: rgb(224, 91, 184);
+                }
+                .pythonIcon:hover {
+                    color: rgb(231, 217, 89);
+                }
+                .gitIcon:hover {
+                    color: rgb(248, 81, 39);
+                }
+                .nodemonIcon:hover {
+                    color: rgb(66, 184, 62);
+                }
+            
+                .skill-name {
+                    font-size: 16px;
+                    color: black;
+                }
             }
         }
     }

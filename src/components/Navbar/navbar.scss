@@ -130,18 +130,141 @@
     
 }
 
-//! APARTADO SCREEN
+//! APARTADO 2
 @media (min-width: 768px) and (max-width: 1023px) {
+    
+    .scrolling {
+        transition: all 0.6s ease;
+    }
+    
+    .header {
+        position: fixed;
+        height: 40px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5000;
+        transition: .3s ease-in;
+
+        .nav-menu a {
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            margin-right: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: max-content;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 40px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1)  );
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+            z-index: 200;
+            position: relative;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            height: 100%;
+            padding: 0 1rem;
+
+            .menu-item {
+                display: none;
+            }
+    
+            .navbar-logo {
+                height: 150%;
+                width: 93px;
+                margin-left: 50px;
+                margin-top: 60px;
+                margin-left: 60px;
+                overflow: hidden;
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+
+                .character {
+                    font-size: 54px;
+                    height: 100%;
+                    position: absolute;
+                    text-shadow: 1px 1px 3px black;
+                    width: 100%;
+                    font-weight: 400;
+                    word-spacing: 2.4rem;
+                    margin-top: -4px;
+                    margin-left: 1px;
+                }
+            
+                .logo {
+                    transform: rotate(0deg);
+                    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.712));
+                    aspect-ratio: 1;
+                    margin: auto;
+                    width: 70px;
+                    color: aliceblue;
+                    cursor: pointer;
+                    padding: 10px;
+                    transition: linear 1s transform;
+                    animation-name: toTurn;
+                    animation-duration: 50s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+            
+                .logo:hover {
+                    transition: linear 400ms transform;
+                    transform: scale(1.09);
+                    cursor: pointer;
+                }
+
+                @keyframes toTurn {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    
+    .header .nav-item {
+        padding: 1rem;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px black;
+    }
+    
+    .contact {
+        background-color: rgb(7, 88, 163);
+        border-radius: 1rem;
+        padding: 2px;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .header .nav-item a:hover {
+        padding-bottom: 0px;
+        text-shadow: 1px 1px 2px black;
+        color: rgb(255, 255, 255);
+    }
+    
 }
 
-//! APARTADO SCREEN
+//! APARTADO 3
 @media (min-width: 480px) and (max-width: 767px) {
-
-}
-
-
-//! APARTADO SCREEN
-@media (max-width: 479px) {
     .header {
         display: flex;
         position: fixed;
@@ -155,17 +278,31 @@
             height: 100vh;
             width: 100vw;
             justify-items: flex-end;
-            background-color: rgba(0, 255, 255, 0.137);
             justify-content: space-between;
             align-items: center;
             height: 40%;
+
+            .menu-item {
+                top: 0;
+                left: 0;
+                z-index: 1000;
+
+                .hamburguer {
+                    .x-item {
+                        position: fixed;
+                        background-color: aqua;
+                        left: 40%;
+                        top: 0%;
+                    }
+                }
+            }
             
             .nav-menu {
                 display: flex;
                 flex-direction: column;
                 transition: 0.7s;
                 flex-wrap: nowrap;
-                padding-top: 10px;
+                padding-top: 50px;
                 margin-right: -100%;
                 align-items: center;
                 align-content: center;
@@ -179,6 +316,7 @@
                 -webkit-backdrop-filter: blur(10px);
                 border-bottom: 1px solid rgba(255, 255, 255, 0.1);
                 border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+                background-color: rgb(0, 0, 0);
 
                 .nav-item {
                     padding: 6px;
@@ -212,7 +350,7 @@
                 transition: 0.7s;
                 margin-right: 0%;
                 flex-wrap: nowrap;
-                padding-top: 10px;
+                padding-top: 50px;
                 align-items: center;
                 align-content: center;
                 width: max-content;
@@ -258,8 +396,191 @@
                 margin-top: 60px;
                 margin-left: 60px;
                 overflow: hidden;
-                position: relative;
-                display: NONE;
+                position: fixed;
+                flex-wrap: nowrap;
+
+                .character {
+                    font-size: 54px;
+                    height: 100%;
+                    position: absolute;
+                    text-shadow: 1px 1px 3px black;
+                    width: 100%;
+                    font-weight: 400;
+                    word-spacing: 2.4rem;
+                    margin-top: -4px;
+                    margin-left: 1px;
+                }
+            
+                .logo {
+                    transform: rotate(0deg);
+                    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.712));
+                    aspect-ratio: 1;
+                    margin: auto;
+                    width: 70px;
+                    color: aliceblue;
+                    cursor: pointer;
+                    padding: 10px;
+                    transition: linear 1s transform;
+                    animation-name: toTurn;
+                    animation-duration: 50s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                }
+            
+                .logo:hover {
+                    transition: linear 400ms transform;
+                    transform: scale(1.09);
+                    cursor: pointer;
+                }
+
+                @keyframes toTurn {
+                    from {
+                        transform: rotate(0deg);
+                    } to {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+//! APARTADO 4
+@media screen and (max-width: 479px) {
+    .header {
+        display: flex;
+        position: fixed;
+        height: max-content;
+        width: 100vw;
+        z-index: 1000;
+
+    
+        .navbar {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-items: flex-end;
+            justify-content: space-between;
+            align-items: center;
+            height: 40%;
+
+            .menu-item {
+                top: 0;
+                left: 0;
+                z-index: 1000;
+
+                .hamburguer {
+                    .x-item {
+                        position: fixed;
+                        background-color: aqua;
+                        left: 40%;
+                        top: 0%;
+                    }
+                }
+            }
+            
+            .nav-menu {
+                display: flex;
+                flex-direction: column;
+                transition: 0.7s;
+                flex-wrap: nowrap;
+                padding-top: 50px;
+                margin-right: -100%;
+                align-items: center;
+                align-content: center;
+                width: max-content;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: max-content;
+                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1)  );
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+                background-color: rgb(0, 0, 0);
+
+                .nav-item {
+                    padding: 6px;
+                    font-weight: 500;
+                    text-shadow: 2px 2px 5px black;
+                    margin: 0.3rem 0;
+
+                    a {
+                        color: #ffffff;
+                        font-size: 16px;
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+        
+                    .contact {
+                        background-color: rgb(7, 88, 163);
+                        border-radius: 1rem;
+                        padding: 2px;
+                        padding-bottom: 5px;
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .nav-menu.active {
+                display: flex;
+                top: 0;
+                flex-direction: column;
+                transition: 0.7s;
+                margin-right: 0%;
+                flex-wrap: nowrap;
+                padding-top: 50px;
+                align-items: center;
+                align-content: center;
+                width: max-content;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                height: max-content;
+                box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.37);
+                background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1)  );
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                border-right: 0.5px solid rgba(255, 255, 255, 0.1);
+
+                .nav-item {
+                    padding: 6px;
+                    font-weight: 500;
+                    text-shadow: 2px 2px 5px black;
+                    margin: 0.3rem 0;
+
+                    a {
+                        color: #ffffff;
+                        font-size: 16px;
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+        
+                    .contact {
+                        background-color: rgb(7, 88, 163);
+                        border-radius: 1rem;
+                        padding: 2px;
+                        padding-bottom: 5px;
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .navbar-logo {
+                height: 150%;
+                width: 93px;
+                margin-left: 50px;
+                margin-top: 60px;
+                margin-left: 60px;
+                overflow: hidden;
+                position: fixed;
                 flex-wrap: nowrap;
 
                 .character {
