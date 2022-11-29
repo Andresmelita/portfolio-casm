@@ -1,37 +1,79 @@
+@media screen and (min-width: 1024px) {
+    .footer {
+        height: 300px;
+        padding-top: 0px;
+        display: flex;
+        position: fixed;
+        z-index: -1000;
+        flex-wrap: wrap;
+        flex-direction: center;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #041c38;
+    
+        .footer-information {
+            h2 {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                padding: 18px;
+                font-weight: 300;
+                margin-top: 240px;
+    
+                span {
+                    font-weight: bold;
+    
+                    .clover {
+                        margin-bottom: -3.4px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {}
+@media (min-width: 480px) and (max-width: 767px) {}
 
-.footer {
-    height: 300px;
-    padding-top: 0px;
-    display: flex;
-    position: fixed;
-    z-index: -100;
-    // background-position: center;
-    // background-size: cover;
-    // background-attachment: fixed;
-    flex-wrap: wrap;
-    flex-direction: center;
-    align-items: center;
-    padding: auto;
-    margin: auto;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: #041c38;
 
-    .footer-information {
-        h2 {
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            padding: 18px;
-            font-weight: 300;
-            margin-top: 240px;
-
-            span {
-                font-weight: bold;
-
-                .clover {
-                    margin-bottom: -3.4px;
+@media screen and (max-width: 479px) {
+    .footer {
+        height: 300px;
+        padding-top: 0px;
+        display: flex;
+        position: relative;
+        z-index: -100;
+        // background-position: center;
+        // background-size: cover;
+        // background-attachment: fixed;
+        flex-wrap: wrap;
+        flex-direction: center;
+        align-items: center;
+        padding: auto;
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: #041c38;
+    
+        .footer-information {
+            h2 {
+                color: rgb(255, 255, 255);
+                font-size: 16px;
+                padding: 18px;
+                font-weight: 300;
+                margin-top: 240px;
+    
+                span {
+                    font-weight: bold;
+    
+                    .clover {
+                        margin-bottom: -3.4px;
+                    }
                 }
             }
         }

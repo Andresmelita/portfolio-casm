@@ -38,7 +38,7 @@ function App() {
           <Loading/>
         ) : (
           <div>
-            <Navbar/>
+            <Navbar className='navbar-app'/>
             <Cover/>
             <About/>
             <Portfolio/>

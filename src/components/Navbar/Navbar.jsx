@@ -17,7 +17,7 @@ const Navbar = ({scrollHeight}) => {
     }
 
     return (
-        <div className='header'>
+        <header className='header'>
             <nav className='navbar'>
                 <div className='navbar-logo'>
                     <p className='character'>&#123; &#125;</p>
@@ -51,7 +51,7 @@ const Navbar = ({scrollHeight}) => {
                     </ol>
                 </ul>
             </nav>
-        </div>
+        </header>
 
     )
 }
