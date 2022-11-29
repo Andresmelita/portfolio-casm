@@ -23,10 +23,14 @@ const Navbar = ({scrollHeight}) => {
                     <p className='character'>&#123; &#125;</p>
                     <img src={logo} alt='' className='logo' onClick={toTheTop}/>
                 </div>
-                <div className='hamburguer' onClick={handleClick}>
-                    {click ? (<FaTimes size={25} style={{color: '#ffffff'}} onClick={closeMenu}/>)
-                        : (<FaBars size={25} style={{color:'#ffffff'}}/>)}
+
+                <div className='menu-item'>
+                    <div className='hamburguer' onClick={handleClick}>
+                        {click ? (<FaTimes className='x-item' size={25} style={{color: '#ffffff'}} onClick={closeMenu}/>)
+                            : (<FaBars size={25} style={{color:'#ffffff'}}/>)}
+                    </div>
                 </div>
+
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <ol className='nav-item'>
                         <a href="#home" onClick={closeMenu}>Inicio</a>
@@ -42,7 +46,7 @@ const Navbar = ({scrollHeight}) => {
                     </ol>
                     <ol className='nav-item'>
                         <div className='contact'>
-                            <a href="#contact" onClick={closeMenu}>Contacto</a>
+                            <a className='contact-a' href="#contact" onClick={closeMenu}>Contacto</a>
                         </div>
                     </ol>
                 </ul>
