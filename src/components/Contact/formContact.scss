@@ -197,14 +197,14 @@
 @media screen and (max-width: 479px) {
 	.form-container {
 		height: 80%;
-		width: 90%;
+		width: 100%;
 		z-index: 5000;
 		align-content: center;
 		margin: auto;
 		align-items: center;
 	
 		.contact_form{	
-			width: 380px; 
+			width: 350px; 
 			height: 92%;
 			margin: auto;
 			border-radius: 10px;  
@@ -307,7 +307,7 @@
 		color: #030c36;
 		font-size: 16px;
 		font-weight: 500;
-		width: 332px; 
+		width: 300px; 
 		height: 40px; 
 		border-radius: 5px;  
 		border-style: solid; 
@@ -324,7 +324,7 @@
 		color: #030c36;
 		font-size: 16px;
 		font-weight: 500;
-		width: 332px; 
+		width: 300px; 
 		height: 150px; 
 		border-radius: 5px;  
 		border-style: solid; 
