@@ -52,7 +52,7 @@
 						height: 45px; 	
 						margin-bottom: 20px; 
 						margin: auto;
-						margin-left: 60px;
+						margin-left: 136px;
 						text-transform: uppercase;
 						background-color: #156b4a; 
 						border-color: #ffffff; 
@@ -62,17 +62,19 @@
 						cursor: pointer;
 						color: #ffffff;
 						transition: 1s;
-						transform: translate(50%);
 						.btn-text {
 							font-size: 16px;
 						}
+					.btn-formOne:hover {
+						transform: scale(1.1);
+					}
 					}
 					.btn-formTwo {
 						height: 45px; 
 						padding-left: 5px;
 						padding-right: 5px; 	
 						margin: auto;
-						margin-left: 60px;
+						margin-left: 136px;
 						text-transform: uppercase;
 						background-color: #1c5d83;
 						border-color: #ffffff; 
@@ -82,10 +84,12 @@
 						cursor: pointer;
 						color: #ffffff;
 						transition: 1s;
-						transform: translate(50%);
 						.btn-text {
 							font-size: 16px;
 						}
+					}
+					.btn-formTwo:hover {
+						transform: scale(1.1);
 					}
 				}
 			}

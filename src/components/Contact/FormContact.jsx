@@ -32,15 +32,7 @@ const FormContact = () => {
 					icon: 'success',
 					title: 'Mensaje enviado !'
 				})
-				// Swal.fire({
-				// 	position: 'center',
-				// 	color: '#ffffff',
-				// 	background:'#000000',
-				// 	icon: 'success',
-				// 	title: 'Mensaje enviado !',
-				// 	showConfirmButton: false,
-				// 	timer: 2000
-				// })
+				event.target.reset()
 			})
 			.catch(error => console.log(error))
 		setMessaggeOk(!messaggeOk)
@@ -79,8 +71,8 @@ const FormContact = () => {
 						</p>
 						<div className='button-container'>
 							<div className='btnSend'>
-								{sendClick ? (<button className='btn-formOne' type="submit" name="enviar_formulario" id="enviar" onClick={hoverButton}><p className='btn-text'>Enviado !</p></button>)
-									: (<button className='btn-formTwo'><p className='btn-text'>Enviar</p></button>)}
+								{sendClick ? (<button className='btn-formOne' id="send" onClick={hoverButton}><p className='btn-text'>Enviado !</p></button>)
+									: (<button className='btn-formTwo' type="submit" name="enviar_formulario"><p className='btn-text'>Enviar</p></button>)}
 							</div>
 						</div> 
 					</form>

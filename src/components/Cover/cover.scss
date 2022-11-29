@@ -126,6 +126,72 @@
         .bachelor {
             text-align: start;
         }
+
+        .content-button {
+            margin: auto;
+            width: 200px;
+            margin-left: 0;
+
+            .btn-download {
+
+                width: max-content;
+                .content-buttonOne {
+                    margin: auto;
+                    background-color: rgba(173, 30, 30, 0);
+                    height: max-content;
+                    width: max-content;
+                    padding-top: 20px;
+                    .button-cvOne {
+                        background-color: #00000000;
+                        border-radius: 2rem;
+                        color: #ecf0f1;
+                        border: none;
+                        height: max-content;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        width: 140px;
+                        font-size: 18px;
+                        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                        cursor: pointer;
+                        transition: 600ms;
+                        border: solid 2px white;
+                    }
+                
+                    .button-cvOne:hover {
+                        background-color: rgba(0, 0, 0, 0);
+                        transform: scale(1);
+                    }
+                    .button-cvTwo {
+                        background-color: #0e366b;
+                        border-radius: 2rem;
+                        color: #ecf0f1;
+                        border: none;
+                        height: max-content;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        width: 200px;
+                        font-size: 18px;
+                        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                        cursor: pointer;
+                        transition: 600ms;
+                        border: solid 2px white;
+                        text-decoration: none;
+                    }
+                
+                    .button-cvTwo:hover {
+                        background-color: rgba(0, 0, 0, 0);
+                        color: #ecf0f1;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+
     }
 
     // .container-photo{
@@ -145,24 +211,7 @@
 }
 
 //? Saludo animación //
-.content-button {
-    .button-cv {
-        background-color: #306d9e;
-        border-radius: 2rem;
-        color: #ecf0f1;
-        border: none;
-        height: 30px;
-        width: 140px;
-        font-size: 18px;
-        margin-top: 20px;
-        text-shadow: 1px 1px 1px rgb(0, 0, 0);
-        cursor: pointer;
-    }
 
-    .button-cv:hover {
-        background-color: rgb(109, 28, 28);
-    }
-}
 .content {
     transform: translate(0%, 0%);
     height: 60px;
