@@ -769,7 +769,7 @@
             aspect-ratio: 1;
             position: absolute;
             transform: rotate(0deg);
-            right: 10px;
+            left: 20px;
             bottom: 0px;
             padding-bottom: 0px;
             margin-bottom: 0px;
@@ -784,10 +784,10 @@
         .portfolio-title {
             padding: 10px;
             align-self: flex-start;
-            margin-left: 180px;
+            margin-left: 0px;
             gap: 0.6rem;
             display: flex;
-            width: 300px;
+            width: max-content;
             margin-bottom: 30px;
             color: aliceblue;
             text-align: start;

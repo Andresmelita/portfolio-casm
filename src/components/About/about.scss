@@ -535,9 +535,9 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            margin-left: 200px;
+            margin-left: 0px;
             height: 100px;
-            width: 350px;
+            width: max-content;
     
             .title {
                 text-align: start;
