@@ -1,7 +1,4 @@
 
-
-
-//! APARTADO 1
 @media screen and (min-width: 1024px) {
 	.form-container {
 		height: 80%;
@@ -189,11 +186,10 @@
 	} */
 }
 
-//! Apartado 2
 @media (min-width: 768px) and (max-width: 1023px) {}
-//! APARTADO 3
+
 @media (min-width: 480px) and (max-width: 767px) {}
-//! APARTADO 4
+
 @media screen and (max-width: 479px) {
 	.form-container {
 		height: 80%;
@@ -208,6 +204,8 @@
 			height: 92%;
 			margin: auto;
 			border-radius: 10px;  
+			align-items: center;
+			align-content: center;
 			padding: 10px;
 			transform: translateY(4%);
 			box-shadow: 3px 3px 8px rgb(0, 0, 0);
@@ -222,6 +220,8 @@
 				height: 100%;
 				margin: auto;
 				position: relative;
+				align-items: center;
+				align-content: center;
 	
 				.contact-me {
 					text-shadow: 2px 2px 2px black;
@@ -243,9 +243,14 @@
 					padding-top: 100px;
 					padding-left: 4px;
 					position: absolute;
+					align-items: center;
+					align-content: center;
 					text-shadow: 2px 2px 2px black;
 	
 					.button-container {
+						align-items: center;
+						align-content: center;
+						width: max-content;
 						.btn-formOne {
 							height: 45px; 	
 							margin-bottom: 20px; 
@@ -272,7 +277,8 @@
 							padding-left: 5px;
 							padding-right: 5px; 	
 							margin: auto;
-							margin-left: 136px;
+							margin-left: 0px;
+							align-self: center;
 							text-transform: uppercase;
 							background-color: #1c5d83;
 							border-color: #ffffff; 
