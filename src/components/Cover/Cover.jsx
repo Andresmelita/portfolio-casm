@@ -24,7 +24,7 @@ const Cover = () => {
                             <h2 className="content__container__text">Hello</h2>
                             <ul className="content__container__list">
                                 <li className="content__container__list__item">world !</li>
-                                <li className="content__container__list__item">developer !</li>
+                                <li className="content__container__list__item">developers !</li>
                                 <li className="content__container__list__item">users !</li>
                                 <li className="content__container__list__item">everybody !</li>
                             </ul>
