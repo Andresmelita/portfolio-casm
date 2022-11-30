@@ -364,7 +364,6 @@
             margin-left: 0px;
             align-self: center;
             height: 40px;
-            background-color: aqua;
             width: 40%;
             align-self: center;
     
@@ -401,7 +400,6 @@
                 height: max-content;
                 margin-left: 0px;
                 margin-bottom: 0px;
-                background-color: antiquewhite;
                 color: rgb(0, 0, 0);
                 gap: 1.5rem;
                 order: 1;
@@ -413,7 +411,6 @@
                     font-size: 22px;
                     margin-right: 100px;
                     padding-left: 30px;
-                    background-color: aqua;
     
                 }
         
@@ -422,7 +419,6 @@
                     font-size: 15px;
                     margin-right: 0px;
                     padding-left: 0px;
-                    background-color: aquamarine;
                 }
     
                 .about-information {
@@ -468,6 +464,22 @@
                                 font-size: 15px;
                                 padding-bottom: px;
                                 color: black;
+
+                                .a {
+                                    order: 5;
+                                }
+                                .b {
+                                    order: 4;
+                                }
+                                .c {
+                                    order: 3;
+                                }
+                                .d {
+                                    order: 2;
+                                }
+                                .e {
+                                    order: 1;
+                                }
     
     
                                 span {
@@ -516,7 +528,6 @@
                 margin-right: 20px;
                 margin-bottom: -12px;
                 cursor: pointer;
-                background-color: aquamarine;
     
                 .me {
                     width: 260px;
