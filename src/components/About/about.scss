@@ -452,58 +452,42 @@
                             color: black;
                             line-height: 1rem;
                         }
-    
+
                         .myInformation {
                             width: 500px;
                             font-size: 16px;
+                            display: flex;
+                            flex-direction:column-reverse;
                             padding-left: 0px;
-    
+
                             .datum {
                                 width: 400px;
-                                display: flex;
                                 font-size: 15px;
                                 padding-bottom: px;
                                 color: black;
 
-                                .a {
-                                    order: 5;
-                                }
-                                .b {
-                                    order: 4;
-                                }
-                                .c {
-                                    order: 3;
-                                }
-                                .d {
-                                    order: 2;
-                                }
-                                .e {
-                                    order: 1;
-                                }
-    
-    
                                 span {
                                     font-weight: 600;
                                     color: black;
                                 }
                             }
                         }
-    
+
                         .education {
                             margin-bottom: 10px;
                             margin-left: 0px;
                             font-size: 15px;
                             line-height: 1.2rem;
-    
+
                             li {
                                 margin-left: 0px;
                             }
-    
+
                             .year {
                                 color: rgb(179, 179, 179);
-    
+
                             }
-    
+
                             .career {
                                 color: black;
                                 font-weight: 500;
@@ -524,7 +508,7 @@
                 height: 100%;
                 width: 80vw;
                 margin: auto;
-                padding-top: 30px;
+                padding-top: 0px;
                 margin-right: 20px;
                 margin-bottom: -12px;
                 cursor: pointer;
