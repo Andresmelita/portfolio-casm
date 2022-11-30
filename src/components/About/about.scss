@@ -353,7 +353,7 @@
         position: relative;
         flex-direction: column;
         height: 100%;
-        width: 100vw;
+        width: 90vw;
         padding:10px;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
@@ -366,10 +366,11 @@
             align-self: center;
             height: 40px;
             background-color: aqua;
-            width: max-content;
+            width: 40vw;
+            align-self: center;
     
             .title {
-                text-align: start;
+                text-align: center;
                 display: flex;
                 font-size: 28px;
                 color: rgb(29, 71, 126);
@@ -378,6 +379,8 @@
             }
             .title-p {
                 color: rgb(92, 172, 209);
+                align-self: center;
+                text-align: center;
                 font-size: 28px;
             }
         }
@@ -433,10 +436,10 @@
     
                     .information-education, .information {
                         text-decoration: none;
-                        text-indent: 10px;
+                        text-indent: 0px;
                         width: 400px;
                         height: max-content;
-                        margin-left: 0px;
+                        margin-left: 10px;
     
     
                         .education-title {
@@ -458,7 +461,7 @@
                         .myInformation {
                             width: 500px;
                             font-size: 16px;
-                            padding-left: 20px;
+                            padding-left: 0px;
     
                             .datum {
                                 width: 400px;
