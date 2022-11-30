@@ -974,7 +974,6 @@
             padding: 10px;
             padding-left: 20px;
             border-radius: 2rem;
-            background-color: #306d9e;
         
             .container-description {
         
@@ -1011,8 +1010,8 @@
         
                 .content-button {
                     margin: auto;
-                    width: 200px;
-                    margin-left: 0;
+                    width: max-content;
+                    margin: auto;
         
                     .btn-download {
                         width: max-content;
@@ -1022,6 +1021,7 @@
                             height: max-content;
                             width: max-content;
                             padding-top: 20px;
+
                             .button-cvOne {
                                 background-color: #00000000;
                                 border-radius: 2rem;
@@ -1031,9 +1031,10 @@
                                 padding-top: 5px;
                                 padding-bottom: 5px;
                                 padding-left: 10px;
+                                text-align: center;
                                 padding-right: 10px;
                                 width: 140px;
-                                font-size: 18px;
+                                font-size: 16px;
                                 text-shadow: 1px 1px 1px rgb(0, 0, 0);
                                 cursor: pointer;
                                 transition: 600ms;
@@ -1055,8 +1056,8 @@
                                 padding-left: 10px;
                                 padding-right: 10px;
                                 width: 200px;
-                                font-size: 18px;
-                                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                                font-size: 16px;
+                                text-align: center;
                                 cursor: pointer;
                                 transition: 600ms;
                                 border: solid 2px white;
@@ -1139,19 +1140,16 @@
     .content {
         transform: translate(0%, 0%);
         height: 60px;
-        align-items: center;
-        align-content: center;
         margin: auto;
         margin-left: 0px;
         margin-right: 0px;
         align-self: center;
-        width: 300px;
+        width: max-content;
         padding-top: 10px;
         overflow: hidden;
         font-size: 22px;
         line-height: 42px;
         color: #ecf0f1;
-        background-color: rgb(190, 130, 50);
         
         h2{
             font-size: 22px;
@@ -1166,13 +1164,13 @@
     
             &:before {
                 content: '[';
-                left: 30px;
+                left: 40px;
             }
     
             &:after {
                 content: ']';
                 position: absolute;
-                right: 30px;
+                right: 20px;
             }
     
             &:after, &:before {
@@ -1204,9 +1202,7 @@
                 margin-right: 10px;
                 padding-left: 10px;
                 text-align: left;
-                list-style: none;
-                background-color: #306d9e;
-                
+                list-style: none;       
                 -webkit-animation-name: change;
                 -webkit-animation-duration: 10s;
                 -webkit-animation-iteration-count: infinite;
