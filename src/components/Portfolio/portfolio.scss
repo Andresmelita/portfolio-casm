@@ -1,7 +1,4 @@
 
-
-
-//! APARTADO 1
 @media screen and (min-width: 1024px) {
     .portfolio-container {
         display: flex;
@@ -250,7 +247,7 @@
         }    
     }
 }
-//! Apartado 2
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .portfolio-container {
         display: flex;
@@ -499,7 +496,7 @@
         }    
     }
 }
-//! APARTADO 3
+
 @media (min-width: 480px) and (max-width: 767px) {
     .portfolio-container {
         display: flex;
@@ -751,13 +748,15 @@
 @media screen and (max-width: 479px) {
     .portfolio-container {
         display: flex;
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 18px;
+        padding-bottom: 10px;
         flex-direction: column;
+        flex-wrap: nowrap;
         width: 100vw;
-        height: 100vh;
-        padding-left: 30px;
-        padding-right: 30px;
+        height: 100%;
+        padding-left: 10px;
+        align-self: center;
+        padding-right: 10px;
         align-items: center;
         position: relative;
         align-content: center;
@@ -782,39 +781,48 @@
     
         .portfolio-title {
             padding: 10px;
-            align-self: flex-start;
+            align-self: center;
             margin-left: 0px;
             gap: 0.6rem;
             display: flex;
             width: max-content;
             margin-bottom: 30px;
             color: aliceblue;
-            text-align: start;
-            font-size: 36px;
+            text-align: center;
+            font-size: 30px;
             cursor: pointer;
             color: rgb(255, 255, 255);
         
             p {
                 color: rgb(117, 192, 211);
-                font-size: 36px;
+                font-size: 30px;
             }
         }
         .projects {
             display: flex;
-            display: none; //!NONENONE
             flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
             align-content: center;
-            width: 82%;
-            gap: 2rem;
+            width: 100%;
+            gap: 1rem;
             height: 100%;
-            margin: 10px;
-            padding: 42px;
+            margin: 0px;
+            padding: 0px;
             z-index: 100;
     
             .portfolio-projects {
                 border: solid 2px rgba(35, 106, 169, 0);
                 transition: 1s ease;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                flex-wrap: wrap;
+                overflow: hidden;
+                border-radius: 10px;
+                width: 100%;
+                height: 240px;
+                color: aliceblue;
     
                 .hamburguer {
                     z-index: 4000;
@@ -827,21 +835,12 @@
                         filter: drop-shadow(1px 1px 2.5px rgb(0, 0, 0));
                     }
                 }
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                flex-wrap: wrap;
-                overflow: hidden;
-                border-radius: 10px;
-                width: 430px;
-                height: 240px;
-                color: aliceblue;
-    
+
                 .project-img {
                     z-index: 100;
                     position: absolute;
-                    width: 99%;
-                    height: 99%;
+                    width: 100%;
+                    height: 100%;
                     bottom: 0px;
                     transition: 1s;
                     transform: scale(1) rotate(0deg);
@@ -874,7 +873,7 @@
                         border-radius: 8px;
                         border: solid rgba(255, 255, 255, 0.671) 2px;
                         height: 215px;
-                        width: 405px;
+                        width: 96%;
                         font-weight: 700;
                         padding-top: 10px;
                         padding-left: 10px;
@@ -929,7 +928,7 @@
                         width: 100%;
                         height: 100%;
                         padding-bottom: 0px;
-                        padding-left: 50%;
+                        padding-left: 40%;
                         gap: 0.6rem;
                         
                         .btn-portfolio {

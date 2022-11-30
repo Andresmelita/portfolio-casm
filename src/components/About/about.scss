@@ -349,6 +349,7 @@
     .about-container {
         display: flex;
         flex-direction: column;
+        padding-top: 18px;
         flex-wrap: nowrap;
         position: relative;
         flex-direction: column;
@@ -373,7 +374,7 @@
                 font-size: 28px;
                 color: rgb(29, 71, 126);
                 gap: 1rem;
-                text-shadow: 1.4px 1.4px 3px black;
+                text-shadow: 0.5px 0.5px 2px black;
             }
             .title-p {
                 color: rgb(92, 172, 209);
