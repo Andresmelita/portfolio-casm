@@ -349,6 +349,7 @@
     .about-container {
         display: flex;
         flex-direction: column;
+        overflow: hidden;
         padding-top: 18px;
         flex-wrap: nowrap;
         position: relative;
