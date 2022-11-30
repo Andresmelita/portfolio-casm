@@ -192,7 +192,9 @@
 
 @media screen and (max-width: 479px) {
 	.form-container {
-		height: 80%;
+		height: 820px;
+		padding-top: 50px;
+		padding-bottom: 40px;
 		width: 100%;
 		z-index: 5000;
 		align-content: center;
@@ -255,7 +257,7 @@
 							height: 45px; 	
 							margin-bottom: 20px; 
 							margin: auto;
-							margin-left: 136px;
+							transform: translateX(50%);
 							text-transform: uppercase;
 							background-color: #156b4a; 
 							border-color: #ffffff; 
@@ -277,7 +279,7 @@
 							padding-left: 5px;
 							padding-right: 5px; 	
 							margin: auto;
-							margin-left: 0px;
+							transform: translateX(50%);
 							align-self: center;
 							text-transform: uppercase;
 							background-color: #1c5d83;
