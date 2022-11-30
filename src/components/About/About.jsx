@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='about-container' id='about'>
             <div className='about-title'>
-                <h1 className='title'>About<p className='title-p'> me</p></h1>
+                <h1 className='title'>Sobre<p className='title-p'> mi</p></h1>
             </div>
             <div className='about-body'>
                 <div className='about-description'>
@@ -20,12 +20,12 @@ const About = () => {
                         <div className='information-education'>
                             <h3 className='education-title'><FaUserGraduate/> Education</h3>
                             <div className='education'>
-                                <li className='career'>Full-Stack Development and Computer Science</li>
+                                <ol className='career'>Full-Stack Development and Computer Science</ol>
                                 <ol className='year'>2022 - currently</ol>
                                 <ol className='institution'>Academlo</ol>
                             </div>
                             <div className='education'>
-                                <li className='career'>Mining Engineering (Bachelor of Engineering) </li>
+                                <ol className='career'>Mining Engineering (Bachelor of Engineering) </ol>
                                 <ol className='year'>2016 - 2021</ol>
                                 <ol className='institution'>Universidad de Santiago de Chile</ol>
                             </div>
