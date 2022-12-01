@@ -251,19 +251,21 @@
 	
 					.button-container {
 						align-items: center;
+						padding-left: 15%;
+						padding-right: 15%;
+						align-self: center;
 						align-content: center;
-						width: max-content;
+						width: 100%;
 						.btn-formOne {
 							height: 45px; 	
 							margin-bottom: 20px; 
 							margin: auto;
-							transform: translateX(50%);
 							text-transform: uppercase;
 							background-color: #156b4a; 
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: max-content;   
+							width: 100%;   
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;
@@ -279,14 +281,13 @@
 							padding-left: 5px;
 							padding-right: 5px; 	
 							margin: auto;
-							transform: translateX(50%);
 							align-self: center;
 							text-transform: uppercase;
 							background-color: #1c5d83;
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: 150px;   
+							width: 100%;   
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;

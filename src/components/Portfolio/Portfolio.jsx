@@ -172,7 +172,7 @@ const Portfolio = () => {
                     </div>
                     <div className={click5 ? 'project-information active' : 'project-information'}>
                             <h2 className='line'><HiShoppingCart className='icon-react'/> Ecommerce</h2>
-                            <p>Página que simula una tienda virtual. <br/><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; En Mantención... <AiOutlineTool className='icon-react'/></span></p>
+                            <p>Página que simula una tienda virtual. <br/><span>&nbsp; &nbsp; &nbsp; &nbsp; En Mantención... <AiOutlineTool className='icon-react'/></span></p>
                             {/* <div className='buttons-container'>
                                 <button onClick={toWeb5}>Ver Proyecto</button>
                                 <button onClick={toGitHub5}>Repositorio</button>
