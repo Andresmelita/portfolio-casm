@@ -24,12 +24,32 @@ const Skills = () => {
                     <p className='skill-name'>CSS</p>
                 </div>
                 <div className='skillbox-technologies'>
+                    <SiGit className='skill-icon gitIcon'/>
+                    <p className='skill-name'>Git</p>
+                </div>
+                <div className='skillbox-technologies'>
                     <SiReact className='skill-icon reactIcon'/>
                     <p className='skill-name'>ReactJS</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <SiRedux className='skill-icon reduxIcon'/>
                     <p className='skill-name'>Redux</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <SiReactrouter className='skill-icon reactRouterIcon'/>
+                    <p className='skill-name'>React Router</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <SiSass className='skill-icon sassIcon'/>
+                    <p className='skill-name'>SASS</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <img src={postgreSQL} alt='' className='skill-icon postgresqlIcon'/>
+                    <p className='skill-name'>PostgreSQL</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <FaNode className='skill-icon nodeIcon'/>
+                    <p className='skill-name'>NodeJS</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <SiExpress className='skill-icon expressIcon'/>
@@ -40,32 +60,12 @@ const Skills = () => {
                     <p className='skill-name'>Sequelize</p>
                 </div>
                 <div className='skillbox-technologies'>
-                    <SiReactrouter className='skill-icon reactRouterIcon'/>
-                    <p className='skill-name'>React Router</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <FaNode className='skill-icon nodeIcon'/>
-                    <p className='skill-name'>NodeJS</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <img src={postgreSQL} alt='' className='skill-icon postgresqlIcon'/>
-                    <p className='skill-name'>PostgreSQL</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <SiSass className='skill-icon sassIcon'/>
-                    <p className='skill-name'>SASS</p>
+                    <SiNodemon className='skill-icon nodemonIcon'/>
+                    <p className='skill-name'>Nodemon</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <SiPython className='skill-icon pythonIcon'/>
                     <p className='skill-name'>Python</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <SiGit className='skill-icon gitIcon'/>
-                    <p className='skill-name'>Git</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <SiNodemon className='skill-icon nodemonIcon'/>
-                    <p className='skill-name'>Nodemon</p>
                 </div>
             </div>
         </div>
