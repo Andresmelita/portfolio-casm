@@ -3,7 +3,7 @@ import coverVideo from '../../media/coverVideo3.mp4'
 import coverImage from '../../media/cover6.jpg'
 import './cover.scss'
 import { useState } from 'react'
-import cv from '../../media/files/cv.pdf'
+import cv from '../../media/files/curriculum.pdf'
 
 const Cover = () => {
 
