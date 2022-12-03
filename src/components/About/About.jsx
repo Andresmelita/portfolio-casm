@@ -25,7 +25,7 @@ const About = () => {
                                 <ol className='institution'>Academlo</ol>
                             </div>
                             <div className='education'>
-                                <ol className='career'>Ingeniero de Ejecución en minas (Licenciado en Ingeniería) </ol>
+                                <ol className='career'>Ingeniero de Ejecución en Minas</ol>
                                 <ol className='year'>2016 - 2021</ol>
                                 <ol className='institution'>Universidad de Santiago de Chile</ol>
                             </div>
