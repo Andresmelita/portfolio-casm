@@ -33,11 +33,11 @@ const About = () => {
                         <div className='information'>
                             <h3 className='myInformation-title'><FaAddressBook/> Información</h3>
                             <div className='myInformation'>
-                                <p className='datum'><span>Age: </span>27</p>
-                                <p className='datum'><span>Degree: </span>Licenciado</p>
-                                <p className='datum'><span>Phone: </span>+569 7938 4744</p>
-                                <p className='datum'><span>Location: </span>Santiago, Chile</p>
-                                <p className='datum'><span>Mail: </span>carlos.salazar.me@usach.cl</p>
+                                <p className='datum'><span>Edad: </span>27</p>
+                                <p className='datum'><span>Grado: </span>Licenciado</p>
+                                <p className='datum'><span>Celular: </span>+569 7938 4744</p>
+                                <p className='datum'><span>Ubicación: </span>Santiago, Chile</p>
+                                <p className='datum'><span>Email: </span>carlos.salazar.me@usach.cl</p>
                             </div>
                         </div>
                     </div>

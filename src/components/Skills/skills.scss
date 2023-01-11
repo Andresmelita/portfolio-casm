@@ -1,17 +1,17 @@
 
 @media screen and (min-width: 1024px) {
     .skills-container {
-        padding-top: 90px;
-        padding-bottom: 90px;
         margin-bottom: -50px;
-        padding-bottom: 0px;
+        padding-bottom: 50px;
+        padding-top: 50px;
         position: relative;
         z-index: 10;
-        height: 70vh;
+        height: max-content;
         background-color: rgb(255, 255, 255);
         align-content: center;
         display: flex;
         flex-direction: column;
+        width: 100%;
         flex-wrap: wrap;
         color: rgb(0, 0, 0);
     

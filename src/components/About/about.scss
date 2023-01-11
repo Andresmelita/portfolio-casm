@@ -1,9 +1,9 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .about-container {
         display: flex;
         position: relative;
         flex-direction: column;
-        height: 70vh;
+        height: max-content;
         align-content: flex-end;
         padding-left: 10px;
         padding-right: 10px;
@@ -46,10 +46,11 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: justify;
-                width: 60%;
+                width: 56%;
                 height: max-content;
                 border-left: solid rgba(22, 73, 141, 0.514);
                 margin-left: 90px;
+                margin-right: -10px;
                 margin-bottom: 60px;
                 color: rgb(0, 0, 0);
                 gap: 1.5rem;
@@ -66,21 +67,22 @@
                 .paragraph {
                     line-height: 1.6;
                     font-size: 16px;
-                    margin-right: 100px;
+                    margin-right: 30px;
                     padding-left: 30px;
                 }
     
                 .about-information {
                     display: flex;
-                    gap: 50px;
+                    gap: 14px;
                     grid-template-columns: repeat(1fr, 2fr);
-                    padding-left: 30px;
-                    margin-top: 0px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 10px;
     
                     .information-education, .information {
                         text-decoration: none;
                         text-indent: 10px;
-                        width: 400px;
+                        width: 50%;
                         height: max-content;
                         margin-left: 10px;
     
@@ -127,18 +129,19 @@
                             font-size: 16px;
                             line-height: 1.2rem;
     
-                            li {
-                                margin-left: -26px;
+                            ol {
+                                margin-left: 0px;
+                                text-indent: 0;
                             }
     
                             .year {
-                                color: rgb(179, 179, 179);
+                                color: rgb(7, 37, 82);
     
                             }
     
                             .career {
                                 color: black;
-                                font-weight: 500;
+                                font-weight: bold;
                             }
     
                             .institution {
@@ -155,7 +158,185 @@
                 height: 100%;
                 width: 30vw;
                 margin: auto;
-                margin-right: -60px;
+                margin-right: -10px;
+                margin-bottom: -6px;
+                cursor: pointer;
+    
+                .me {
+                    width: 550px;
+                    margin: auto;
+                    aspect-ratio: 1;
+                    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .about-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: max-content;
+        align-content: flex-end;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 80px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    
+        .about-title {
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 200px;
+            height: 100px;
+            width: 350px;
+    
+            .title {
+                text-align: start;
+                display: flex;
+                font-size: 36px;
+                color: rgb(29, 71, 126);
+                gap: 1rem;
+                text-shadow: 1.4px 1.4px 3px black;
+            }
+            .title-p {
+                color: rgb(92, 172, 209);
+                font-size: 36px;
+            }
+        }
+    
+        .about-body {
+            padding-top:8px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80vw;
+            margin: auto;
+    
+            .about-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: justify;
+                width: 56%;
+                height: max-content;
+                border-left: solid rgba(22, 73, 141, 0.514);
+                margin-left: 90px;
+                margin-right: -10px;
+                margin-bottom: 60px;
+                background-color: aqua;
+                color: rgb(0, 0, 0);
+                gap: 1.5rem;
+    
+                .myName {
+                    font-weight: 600;
+                    line-height: 1.6;
+                    font-size: 22px;
+                    margin-right: 100px;
+                    padding-left: 30px;
+    
+                }
+        
+                .paragraph {
+                    line-height: 1.6;
+                    font-size: 16px;
+                    margin-right: 30px;
+                    padding-left: 30px;
+                }
+    
+                .about-information {
+                    display: flex;
+                    gap: 14px;
+                    grid-template-columns: repeat(1fr, 2fr);
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 10px;
+                    background-color: antiquewhite;
+    
+                    .information-education, .information {
+                        text-decoration: none;
+                        text-indent: 10px;
+                        width: 50%;
+                        background-color: aquamarine;
+                        height: max-content;
+                        margin-left: 10px;
+    
+    
+                        .education-title {
+                            margin-bottom: -14px;
+                            margin-left: -10px;
+                            font-weight: 800;
+                            font-size: 20px;
+                            color: black;
+                        }
+    
+                        .myInformation-title {
+                            margin-bottom: -10px;
+                            font-weight: 800;
+                            font-size: 20px;
+                            color: black;
+                            line-height: 1rem;
+                        }
+    
+                        .myInformation {
+                            width: 500px;
+                            font-size: 16px;
+                            padding-left: 20px;
+    
+                            .datum {
+                                width: 400px;
+                                display: flex;
+                                font-size: 16px;
+                                padding-bottom: px;
+                                color: black;
+    
+    
+                                span {
+                                    font-weight: 600;
+                                    color: black;
+                                }
+                            }
+                        }
+    
+                        .education {
+                            margin-bottom: 10px;
+                            margin-left: 20px;
+                            font-size: 16px;
+                            line-height: 1.2rem;
+    
+                            ol {
+                                margin-left: 0px;
+                                text-indent: 0;
+                            }
+    
+                            .year {
+                                color: rgb(7, 37, 82);
+    
+                            }
+    
+                            .career {
+                                color: black;
+                                font-weight: bold;
+                            }
+    
+                            .institution {
+                                color: rgb(47, 135, 161);
+                            }
+                        }
+                    }
+                }
+            
+            }
+            
+            .about-img {
+                display: flex;
+                height: 100%;
+                width: 30vw;
+                margin: auto;
+                margin-right: -10px;
                 margin-bottom: -6px;
                 cursor: pointer;
     
