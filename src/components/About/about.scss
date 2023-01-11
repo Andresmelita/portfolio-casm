@@ -78,13 +78,20 @@
                     padding-left: 10px;
                     padding-right: 10px;
                     padding-top: 10px;
+
+                    .information {
+                        width: 45%;
+                    }
+
+                    .information-education {
+                        width: 55%;
+                    }
     
                     .information-education, .information {
                         text-decoration: none;
                         text-indent: 10px;
-                        width: 50%;
                         height: max-content;
-                        margin-left: 10px;
+                        margin-left: 20px;
     
     
                         .education-title {
@@ -172,7 +179,6 @@
         }
     }
 }
-
 @media (min-width: 1024px) and (max-width: 1439px) {
     .about-container {
         display: flex;
@@ -350,7 +356,6 @@
         }
     }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
     .about-container {
         display: flex;
@@ -522,10 +527,8 @@
         }
     }
 }
-
 @media (min-width: 480px) and (max-width: 767px) {
 }
-
 @media screen and (max-width: 479px) {
     .about-container {
         display: flex;

@@ -1,4 +1,12 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+    .cover-footer {
+        width: 100%;
+        height: 40px;
+        opacity: 0;
+        background-color: rgba(0, 255, 255, 0);
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
     .cover-footer {
         width: 100%;
         height: 40px;

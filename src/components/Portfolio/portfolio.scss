@@ -1,5 +1,252 @@
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
+    .portfolio-container {
+        display: flex;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+        position: relative;
+        align-content: center;
+        background-color: rgb(0, 0, 0);
+    
+        .about-hoja {
+            z-index: 90;
+            aspect-ratio: 1;
+            position: absolute;
+            transform: rotate(0deg);
+            right: 10px;
+            bottom: -140px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            filter: brightness(0.8) contrast(1.2);
+    
+            .hoja {
+                width: 500px;
+                filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.61));
+            }
+        }
+    
+        .portfolio-title {
+            padding: 10px;
+            align-self: flex-start;
+            margin-left: 180px;
+            gap: 0.6rem;
+            display: flex;
+            width: 300px;
+            margin-bottom: 30px;
+            color: aliceblue;
+            text-align: start;
+            font-size: 36px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        
+            p {
+                color: rgb(117, 192, 211);
+                font-size: 36px;
+            }
+        }
+        
+        .projects {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            background-color: aqua;
+            justify-content: center;
+            gap: 2rem;
+            height: 100%;
+            z-index: 100;
+    
+            .portfolio-projects {
+                border: solid 2px rgba(35, 106, 169, 0);
+                transition: 1s ease;
+    
+                .hamburguer {
+                    z-index: 4000;
+                    position: absolute;
+                    cursor: pointer;
+                    right: 30px;
+                    top: 30px;
+                    .icon {
+                        margin-bottom: -4px;
+                        filter: drop-shadow(1px 1px 2.5px rgb(0, 0, 0));
+                    }
+                }
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                flex-wrap: wrap;
+                overflow: hidden;
+                border-radius: 10px;
+                width: 430px;
+                height: 240px;
+                color: aliceblue;
+    
+                .project-img {
+                    z-index: 100;
+                    position: absolute;
+                    width: 99%;
+                    height: 99%;
+                    bottom: 0px;
+                    transition: 1s;
+                    transform: scale(1) rotate(0deg);
+                    border: solid 2px rgb(0, 0, 0);
+                    border-radius: 12px;
+                }
+    
+                .project-img:hover {
+                    transform: scale(1.4) rotate(8deg);
+                    border: solid 2px rgb(0, 0, 0);
+                }
+    
+                .project-information {
+                    z-index: 1000;
+                    background-color: rgba(0, 0, 0, 0.795);
+                    border: solid 2px rgb(0, 0, 0);
+                    text-shadow: 0px 5px 5px black;
+                    backdrop-filter: blur(1px);
+                    -webkit-backdrop-filter: blur(1px);
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    margin-bottom: 0px;
+                    transition: 1s;
+                    opacity: 1;
+                    align-content: center;
+    
+                    .line {
+                        border-radius: 8px;
+                        border: solid rgba(255, 255, 255, 0.671) 2px;
+                        height: 215px;
+                        width: 405px;
+                        font-weight: 700;
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        margin-left: -12px;
+                        margin-top: -12px;
+                        position: absolute;
+                        opacity: 1;
+                    }
+        
+                    .line:hover {
+                        opacity: 1;
+                    }
+    
+                    .icon-react {
+                        margin-bottom: -4px;
+                        color: rgb(127, 240, 255);
+                        filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.699));
+                    }
+                    
+                    h2, a {
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: white;
+                        cursor: pointer;
+                        position: relative;
+                    }
+    
+                    p {
+                        font-size: 16px;
+                        padding-left: 14px;
+                        padding-right: 18px;
+                        padding-bottom: 60px;
+                        height: 136px;
+                        bottom: 28px;
+                        right: 20px;
+                        left: 20px;
+                        text-align:justify ;
+                        position: absolute;
+                        color: aliceblue;
+    
+                        span {
+                            font-size: 20px;
+                            color: rgb(255, 251, 189);
+                            line-height: 2rem;
+                        }
+                    }
+    
+                    .buttons-container {
+                        display: flex;
+                        align-items: flex-end;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        height: 100%;
+                        padding-bottom: 0px;
+                        padding-left: 50%;
+                        gap: 0.6rem;
+                        
+                        .btn-portfolio {
+                            z-index: 2000;
+                            align-content: flex-end;
+                            font-size: 13px;
+                            cursor: pointer;
+                            width: 90px;
+                            padding-bottom: 4px;
+                            height: max-content;
+                            color: aliceblue;
+                            border-radius: 16px;
+                            border: solid white 1.4px;
+                            background-color: rgb(20, 66, 110);
+                            text-shadow: 2px 2px 3px black;
+                            transition: 500ms;
+                        }
+        
+                        .btn-portfolio:hover {
+                            background-color: rgb(0, 0, 0);
+                        }
+                    }
+                }
+    
+                .project-information.active {
+                    z-index: 1000;
+                    background-color: rgba(0, 0, 0, 0.795);
+                    border: solid 2px white;
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    margin-bottom: 0px;
+                    transition: 1s;
+                    opacity: 0;
+                    align-content: center;
+    
+                    .line {
+                        border-radius: 10px;
+                        border: solid rgba(255, 255, 255, 0.671) 2px;
+                        height: 100%;
+                        width: 100%;
+                        margin: auto;
+                        opacity: 1;
+                    }
+        
+                    .line:hover {
+                        opacity: 1;
+                    }
+                }
+    
+    
+            }
+    
+            .portfolio-projects:hover {
+                transform: scale(1.04);
+                border: solid 3px rgba(251, 248, 248, 0.761);
+                border-radius: 16px;
+            }
+    
+            .portfolio-projects:hover .project-img {
+                transform: scale(1.4) rotate(8deg);
+    
+                border: solid 3px rgb(0, 0, 0);
+            }
+        }    
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
     .portfolio-container {
         display: flex;
         padding-top: 90px;
@@ -247,7 +494,6 @@
         }    
     }
 }
-
 @media (min-width: 768px) and (max-width: 1023px) {
     .portfolio-container {
         display: flex;
@@ -496,7 +742,6 @@
         }    
     }
 }
-
 @media (min-width: 480px) and (max-width: 767px) {
     .portfolio-container {
         display: flex;
