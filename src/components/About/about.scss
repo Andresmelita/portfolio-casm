@@ -188,7 +188,7 @@
         align-content: flex-end;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 80px;
+        padding-top: 40px;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
     
@@ -196,14 +196,14 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            margin-left: 200px;
-            height: 100px;
-            width: 350px;
+            margin-left: 100px;
+            height: 80px;
+            width: 300px;
     
             .title {
                 text-align: start;
                 display: flex;
-                font-size: 36px;
+                font-size: 34px;
                 color: rgb(29, 71, 126);
                 gap: 1rem;
                 text-shadow: 1.4px 1.4px 3px black;
@@ -215,11 +215,12 @@
         }
     
         .about-body {
-            padding-top:8px;
+            padding-top:2px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 80vw;
+            width: 90vw;
+            background-color: aquamarine;
             margin: auto;
     
             .about-description {
@@ -227,15 +228,15 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: justify;
-                width: 56%;
+                width: 68%;
                 height: max-content;
                 border-left: solid rgba(22, 73, 141, 0.514);
-                margin-left: 90px;
+                margin-left: 0px;
                 margin-right: -10px;
-                margin-bottom: 60px;
+                margin-bottom: 40px;
                 background-color: aqua;
                 color: rgb(0, 0, 0);
-                gap: 1.5rem;
+                gap: 1.2rem;
     
                 .myName {
                     font-weight: 600;
@@ -248,7 +249,7 @@
         
                 .paragraph {
                     line-height: 1.6;
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-right: 30px;
                     padding-left: 30px;
                 }
@@ -275,27 +276,27 @@
                             margin-bottom: -14px;
                             margin-left: -10px;
                             font-weight: 800;
-                            font-size: 20px;
+                            font-size: 18px;
                             color: black;
                         }
     
                         .myInformation-title {
                             margin-bottom: -10px;
                             font-weight: 800;
-                            font-size: 20px;
+                            font-size: 18px;
                             color: black;
                             line-height: 1rem;
                         }
     
                         .myInformation {
                             width: 500px;
-                            font-size: 16px;
+                            font-size: 14px;
                             padding-left: 20px;
     
                             .datum {
                                 width: 400px;
                                 display: flex;
-                                font-size: 16px;
+                                font-size: 14px;
                                 padding-bottom: px;
                                 color: black;
     
@@ -310,7 +311,7 @@
                         .education {
                             margin-bottom: 10px;
                             margin-left: 20px;
-                            font-size: 16px;
+                            font-size: 14px;
                             line-height: 1.2rem;
     
                             ol {
@@ -347,7 +348,7 @@
                 cursor: pointer;
     
                 .me {
-                    width: 550px;
+                    width: 340px;
                     margin: auto;
                     aspect-ratio: 1;
                     filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
