@@ -326,14 +326,14 @@
             display: grid;
             z-index: 5000;
             grid-template-columns: auto;
-            width: 62px;
-            height: 260px;
+            width: 48px;
+            height: 190px;
             align-items: center;
             align-content: center;
             position: fixed;
             right: 0px;
-            bottom: 100px;
-            gap: 2.6rem;
+            bottom: 80px;
+            gap: 1.6rem;
             margin-top: 100px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
@@ -346,10 +346,10 @@
             .github, .linkedin, .instagram {
                 filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.61));
                 color: rgb(255, 255, 255);
-                font-size: 38px;
+                font-size: 28px;
                 margin: 0 auto;
                 padding: 0;
-                padding-left: 14px;
+                padding-left: 10px;
                 border-bottom: 4px solid transparent;
                 transition: all 0.3s ease-out linear transform;
             }
@@ -388,24 +388,24 @@
     
     .container {
         display: flex;
+        transform: translateY(10%) ;
         flex-wrap: nowrap;
-        gap: 4rem;
-        width: 70%;
+        gap: 1rem;
+        width: 80%;
         align-content: space-between;
         margin: auto;
-        padding: 70px;
+        padding: 40px;
         border-radius: 2rem;
     
         .container-description {
-    
             p {
-                font-size: 20px;
+                font-size: 16px;
                 color: rgb(231, 231, 231);
                 padding-left: 5px;
             }
             .name {
                 font-weight: bold;
-                font-size: 60px;
+                font-size: 48px;
                 justify-content: center;
                 align-items: center;
                 background-image: linear-gradient(45deg, rgb(6, 120, 173),rgb(31, 104, 138), rgb(0, 89, 161), rgb(41, 115, 145));
@@ -416,6 +416,7 @@
                 -moz-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -moz-text-fill-color: transparent; 
+                margin-bottom: -20px;
             }
     
             .developer {
@@ -428,7 +429,7 @@
     
             .content-button {
                 margin: auto;
-                width: 190px;
+                width: max-content;
                 margin-left: 0;
     
                 .btn-download {
@@ -447,10 +448,10 @@
                             height: max-content;
                             padding-top: 5px;
                             padding-bottom: 5px;
-                            padding-left: 10px;
-                            padding-right: 10px;
-                            width: 130px;
-                            font-size: 18px;
+                            padding-left: 4px;
+                            padding-right: 4px;
+                            width: max-content;
+                            font-size: 14px;
                             text-shadow: 1px 1px 1px rgb(0, 0, 0);
                             cursor: pointer;
                             transition: 600ms;
@@ -466,12 +467,12 @@
                             border-radius: 2rem;
                             border: none;
                             height: max-content;
-                            padding-top: 5px;
-                            padding-bottom: 5px;
-                            padding-left: 10px;
-                            padding-right: 10px;
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            padding-left: 6px;
+                            padding-right: 6px;
                             width: max-content;
-                            font-size: 18px;
+                            font-size: 14px;
                             text-shadow: 1px 1px 1px rgb(0, 0, 0);
                             cursor: pointer;
                             transition: 600ms;
@@ -499,15 +500,15 @@
     .content {
         transform: translate(0%, 0%);
         height: 60px;
-        width: 400px;
+        width: 300px;
         padding-top: 10px;
         overflow: hidden;
-        font-size: 30px;
+        font-size: 22px;
         line-height: 42px;
         color: #ecf0f1;
         
         h2{
-            font-size: 30px;
+            font-size: 22px;
         }
     
         &__container {
@@ -524,7 +525,7 @@
             &:after {
                 content: ']';
                 position: absolute;
-                right: 0;
+                right: 10px;
             }
     
             &:after, &:before {
@@ -532,8 +533,8 @@
                 top: 0;
                 
                 color: #306d9e;
-                font-size: 42px;
-                line-height: 60px;
+                font-size: 40px;
+                line-height: 56px;
                 
                 -webkit-animation-name: opacity;
                 -webkit-animation-duration: 2s;
@@ -551,7 +552,7 @@
     
             &__list {
                 margin-top: 0;
-                padding-left: 110px;
+                padding-left: 90px;
                 text-align: left;
                 list-style: none;
                 

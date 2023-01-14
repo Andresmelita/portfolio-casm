@@ -31,8 +31,8 @@ const Cover = () => {
                         </div>
                     </div>
                     <h1 className='name'>Andrés Salazar Melita</h1>
-                    <p className='developer'>Desarrollador Front-End</p>
-                    <p className='bachelor'>Licenciado en Ingeniería Aplicada</p>
+                    <p className='developer'>Licenciado en Ingeniería Aplicada</p>
+                    <p className='bachelor'>Desarrollador FullStack</p>
                     {/* <form className='content-button'>
                         <button className='button-cv'>Download CV</button>
                     </form> */}

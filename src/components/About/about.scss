@@ -220,7 +220,6 @@
             flex-direction: row;
             flex-wrap: wrap;
             width: 90vw;
-            background-color: aquamarine;
             margin: auto;
     
             .about-description {
@@ -231,10 +230,8 @@
                 width: 68%;
                 height: max-content;
                 border-left: solid rgba(22, 73, 141, 0.514);
-                margin-left: 0px;
-                margin-right: -10px;
+                margin-left: 60px;
                 margin-bottom: 40px;
-                background-color: aqua;
                 color: rgb(0, 0, 0);
                 gap: 1.2rem;
     
@@ -261,13 +258,11 @@
                     padding-left: 10px;
                     padding-right: 10px;
                     padding-top: 10px;
-                    background-color: antiquewhite;
     
                     .information-education, .information {
                         text-decoration: none;
                         text-indent: 10px;
                         width: 50%;
-                        background-color: aquamarine;
                         height: max-content;
                         margin-left: 10px;
     
@@ -341,10 +336,11 @@
             .about-img {
                 display: flex;
                 height: 100%;
-                width: 30vw;
+                width: 20vw;
                 margin: auto;
-                margin-right: -10px;
+                transform: translateX(-40%);
                 margin-bottom: -6px;
+                margin-right: 20px;
                 cursor: pointer;
     
                 .me {
