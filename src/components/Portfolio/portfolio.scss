@@ -249,7 +249,7 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .portfolio-container {
         display: flex;
-        padding-top: 90px;
+        padding-top: 40px;
         padding-bottom: 90px;
         flex-direction: column;
         width: 100%;
@@ -281,36 +281,36 @@
         .portfolio-title {
             padding: 10px;
             align-self: flex-start;
-            margin-left: 180px;
+            margin-left: 80px;
             gap: 0.6rem;
             display: flex;
             width: 300px;
             margin-bottom: 30px;
             color: aliceblue;
             text-align: start;
-            font-size: 36px;
+            font-size: 32px;
             cursor: pointer;
             color: rgb(255, 255, 255);
         
             p {
                 color: rgb(117, 192, 211);
-                font-size: 36px;
+                font-size: 32px;
             }
         }
         .projects {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             align-content: center;
-            width: 82%;
+            width: 96%;
             gap: 2rem;
             height: 100%;
             margin: 10px;
-            padding: 42px;
+            padding: 10px;
             z-index: 100;
     
             .portfolio-projects {
-                border: solid 2px rgba(35, 106, 169, 0);
                 transition: 1s ease;
     
                 .hamburguer {

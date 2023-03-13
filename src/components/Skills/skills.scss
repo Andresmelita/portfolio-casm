@@ -143,6 +143,8 @@
 @media (min-width: 1024px) and (max-width: 1439px) {
     .skills-container {
         z-index: 10;
+        padding-bottom: 50px;
+        padding-top: 50px;
         background-color: rgb(255, 255, 255);
         align-content: center;
         display: flex;
@@ -153,11 +155,11 @@
     
         .skills-title {
             padding: 0;
-            margin-left: -170px;
+            margin-left: -100px;
     
             .title {
                 text-align: start;
-                font-size: 36px;
+                font-size: 32px;
                 width: 300px;
                 color: rgb(29, 71, 126);
                 text-shadow: 0.5px 0.5px 2px black;
