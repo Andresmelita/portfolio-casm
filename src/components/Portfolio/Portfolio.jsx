@@ -1,6 +1,7 @@
 import React from 'react'
 import hoja from '../../media/hoja.png'
 import './portfolio.scss'
+import project0 from '../../media/portfolio/paracuando.png'
 import project1 from '../../media/portfolio/pokedex0.png'
 import project2 from '../../media/portfolio/weatherapp0.png'
 import project3 from '../../media/portfolio/rickandmorty0.png'
@@ -12,6 +13,7 @@ import { TiWeatherPartlySunny } from 'react-icons/ti'
 import { HiCursorClick, HiShoppingCart } from 'react-icons/hi'
 import { MdAdsClick } from 'react-icons/md'
 import { AiOutlineTool } from 'react-icons/ai'
+import {FaQuestion} from 'react-icons/fa'
 import { ImPen } from 'react-icons/im'
 import { useState } from 'react'
 
@@ -43,6 +45,14 @@ const Portfolio = () => {
     }
     const hover5 = () => {
         setClick5(false)
+    }
+
+    //? Links Pokedex
+    const toWeb0 = () => {
+        window.open('https://project-jseight.vercel.app')
+    }
+    const toGitHub0 = () => {
+        window.open('https://github.com/Andresmelita/project-JsEight')
     }
 
     //? Links Pokedex
@@ -90,8 +100,9 @@ const Portfolio = () => {
             <div className='about-hoja'>
                 <img className='hoja' src={hoja} alt=''/>
             </div>
-            <h1 className='portfolio-title'>What I <p> Do</p></h1>
+            <h1 className='portfolio-title'>Mis <p> Proyectos</p></h1>
             <div className='projects'>
+
 
                 <div className='portfolio-projects'>
                     <div className='hamburguer' onClick={handleClick1}>
@@ -99,7 +110,24 @@ const Portfolio = () => {
                             : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
                     </div>
                     <div className={click1 ? 'project-information active' : 'project-information'}>
-                            <h2 className='line'><TbPokeball className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Pokedex</a></h2>
+                            <h2 className='line'><FaQuestion className='icon-react'/> Para Cuando?</h2>
+                            <p>Proyecto en grupo diseñado para votar y proponer eventos en la comunidad de residencia.</p>
+                            <div className='buttons-container'>
+                                <button className='btn-portfolio' onClick={toWeb1}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub1}>Repositorio</button>
+                            </div>
+                    </div>
+                    <img className='project-img' src={project0} alt='' id='project1'/>
+                    <div className='line'></div>
+                </div>
+
+                <div className='portfolio-projects'>
+                    <div className='hamburguer' onClick={handleClick1}>
+                        {click1 ? (<HiCursorClick className='icon' size={27} style={{color: '#ffffff'}} onClick={hover1}/>)
+                            : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
+                    </div>
+                    <div className={click1 ? 'project-information active' : 'project-information'}>
+                            <h2 className='line'><TbPokeball className='icon-react'/> Pokedex</h2>
                             <p>Consulta la información de tu Pokémon favorito!, puedes filtrar por tipo o buscar directamente por el nombre en esta enciclopedia.</p>
                             <div className='buttons-container'>
                                 <button className='btn-portfolio' onClick={toWeb1}>Ver Proyecto</button>
@@ -117,7 +145,7 @@ const Portfolio = () => {
                             : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
                     </div>
                     <div className={click2 ? 'project-information active' : 'project-information'}>
-                            <h2 className='line'><TiWeatherPartlySunny className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Weather App</a></h2>
+                            <h2 className='line'><TiWeatherPartlySunny className='icon-react'/> Weather App</h2>
                             <p>Activa tu ubicación para conocer el clima actual en tu zona.</p>
                             <div className='buttons-container'>
                                 <button className='btn-portfolio' onClick={toWeb2}>Ver Proyecto</button>
@@ -135,7 +163,7 @@ const Portfolio = () => {
                             : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
                     </div>
                     <div className={click3 ? 'project-information active' : 'project-information'}>
-                            <h2 className='line'><RiAliensLine className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Rick & Morty App</a></h2>
+                            <h2 className='line'><RiAliensLine className='icon-react'/> Rick & Morty App</h2>
                             <p>Página que muestra diferentes personajes de la serie según la dimensión o el universo al que pertenezcan.</p>
                             <div className='buttons-container'>
                                 <button className='btn-portfolio' onClick={toWeb3}>Ver Proyecto</button>
@@ -153,7 +181,7 @@ const Portfolio = () => {
                             : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
                     </div>
                     <div className={click4 ? 'project-information active' : 'project-information'}>
-                            <h2 className='line'><ImPen className='icon-react'/> <a href='https://weather-andresmelita.netlify.app/' target='_blank'>  Quote Box</a></h2>
+                            <h2 className='line'><ImPen className='icon-react'/> Quote Box</h2>
                             <p>Conoce diversas frases célebres de grandes autores y personajes a lo largo de la historia, éstas se mostrarán aleatoriamente.</p>
                             <div className='buttons-container'>
                                 <button className='btn-portfolio' onClick={toWeb4}>Ver Proyecto</button>
@@ -165,7 +193,7 @@ const Portfolio = () => {
                 </div>
 
 
-                <div className='portfolio-projects'>
+                {/* <div className='portfolio-projects'>
                     <div className='hamburguer' onClick={handleClick5}>
                         {click5 ? (<HiCursorClick className='icon' size={27} onClick={hover5}/>)
                             : (<MdAdsClick className='icon' size={27}/>)}
@@ -173,14 +201,11 @@ const Portfolio = () => {
                     <div className={click5 ? 'project-information active' : 'project-information'}>
                             <h2 className='line'><HiShoppingCart className='icon-react'/> Ecommerce</h2>
                             <p>Página que simula una tienda virtual. <br/><span>&nbsp; &nbsp; &nbsp; &nbsp; En Mantención... <AiOutlineTool className='icon-react'/></span></p>
-                            {/* <div className='buttons-container'>
-                                <button onClick={toWeb5}>Ver Proyecto</button>
-                                <button onClick={toGitHub5}>Repositorio</button>
-                            </div> */}
+
                     </div>
                     <img className='project-img' src={project5} alt='' id='project5'/>
                     <div className='line'></div>
-                </div>
+                </div> */}
 
                 
             </div>

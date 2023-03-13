@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiJavascript, SiHtml5, SiCss3, SiReact, SiRedux, SiGit, SiExpress, SiSequelize, SiReactrouter, SiNodedotjs, SiNodemon, SiPostgresql, SiSass, SiPython } from 'react-icons/si'
+import { SiJavascript, SiEslint, SiTailwindcss, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiReact, SiRedux, SiGit, SiExpress, SiSequelize, SiReactrouter, SiNodedotjs, SiNodemon, SiPostgresql, SiSass, SiPython } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import postgreSQL from '../../media/icons/postgresql.svg'
 import './skills.scss'
@@ -11,9 +11,17 @@ const Skills = () => {
                 <h1 className='title'>Tecnologías</h1>
             </div>
             <div className='skillbox'>
+            <div className='skillbox-technologies'>
+                    <SiPython className='skill-icon pythonIcon'/>
+                    <p className='skill-name'>Python</p>
+                </div>
                 <div className='skillbox-technologies'>
                     <SiJavascript className='skill-icon javascriptIcon'/>
                     <p className='skill-name'>Javascript</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <SiTypescript className='skill-icon typescriptIcon'/>
+                    <p className='skill-name'>Typescript</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <SiHtml5 className='skill-icon htmlIcon'/>
@@ -40,12 +48,16 @@ const Skills = () => {
                     <p className='skill-name'>React Router</p>
                 </div>
                 <div className='skillbox-technologies'>
-                    <SiSass className='skill-icon sassIcon'/>
-                    <p className='skill-name'>SASS</p>
+                    <SiNextdotjs className='skill-icon nextIcon'/>
+                    <p className='skill-name'>Next.js</p>
                 </div>
                 <div className='skillbox-technologies'>
-                    <img src={postgreSQL} alt='' className='skill-icon postgresqlIcon'/>
-                    <p className='skill-name'>PostgreSQL</p>
+                    <SiEslint className='skill-icon eslintIcon'/>
+                    <p className='skill-name'>Eslint</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <SiTailwindcss className='skill-icon tailwindIcon'/>
+                    <p className='skill-name'>Tailwind</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <FaNode className='skill-icon nodeIcon'/>
@@ -55,17 +67,15 @@ const Skills = () => {
                     <SiExpress className='skill-icon expressIcon'/>
                     <p className='skill-name'>ExpressJS</p>
                 </div>
+
                 <div className='skillbox-technologies'>
                     <SiSequelize className='skill-icon sequelizeIcon'/>
                     <p className='skill-name'>Sequelize</p>
                 </div>
+
                 <div className='skillbox-technologies'>
-                    <SiNodemon className='skill-icon nodemonIcon'/>
-                    <p className='skill-name'>Nodemon</p>
-                </div>
-                <div className='skillbox-technologies'>
-                    <SiPython className='skill-icon pythonIcon'/>
-                    <p className='skill-name'>Python</p>
+                    <img src={postgreSQL} alt='' className='skill-icon postgresqlIcon'/>
+                    <p className='skill-name'>PostgreSQL</p>
                 </div>
             </div>
         </div>

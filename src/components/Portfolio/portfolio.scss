@@ -2,7 +2,7 @@
     .portfolio-container {
         display: flex;
         padding-top: 90px;
-        padding-bottom: 90px;
+        padding-bottom: 130px;
         flex-direction: column;
         width: 100%;
         height: max-content;
@@ -182,12 +182,13 @@
                         
                         .btn-portfolio {
                             z-index: 2000;
-                            align-content: flex-end;
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
                             font-size: 13px;
                             cursor: pointer;
                             width: 90px;
-                            padding-bottom: 4px;
-                            height: max-content;
+                            height: 30px;
                             color: aliceblue;
                             border-radius: 16px;
                             border: solid white 1.4px;
