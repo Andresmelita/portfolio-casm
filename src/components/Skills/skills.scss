@@ -3,7 +3,6 @@
         margin-bottom: -50px;
         padding-bottom: 50px;
         padding-top: 50px;
-        position: relative;
         z-index: 10;
         height: max-content;
         background-color: rgb(255, 255, 255);
@@ -136,12 +135,7 @@
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
     .skills-container {
-        margin-bottom: -50px;
-        padding-bottom: 50px;
-        padding-top: 50px;
-        position: relative;
         z-index: 10;
-        height: max-content;
         background-color: rgb(255, 255, 255);
         align-content: center;
         display: flex;
