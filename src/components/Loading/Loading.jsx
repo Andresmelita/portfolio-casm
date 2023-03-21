@@ -1,17 +1,14 @@
 import React from 'react'
-import './loading.css'
+import './loading.scss'
 
 const Loading = () => {
-
     return (
-        <div className='centered'>
-            <div className="lds-ring">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <div className='container-loader'>
+            <div className="loader">
+                <span>&#123;</span><span>&#125;</span>
             </div>
         </div>
+
     )
 }
 
