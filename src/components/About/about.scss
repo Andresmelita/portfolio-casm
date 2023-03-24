@@ -735,7 +735,7 @@
             .title {
                 text-align: center;
                 display: flex;
-                font-size: 28px;
+                font-size: 30px;
                 color: rgb(29, 71, 126);
                 gap: 1rem;
                 text-shadow: 0.5px 0.5px 2px black;
@@ -744,7 +744,7 @@
                 color: rgb(92, 172, 209);
                 align-self: center;
                 text-align: center;
-                font-size: 28px;
+                font-size: 30px;
             }
         }
     
@@ -871,7 +871,7 @@
                 display: flex;
                 order: 2;
                 height: 100%;
-                width: 80vw;
+                width: 60vw;
                 margin: auto;
                 padding-top: 0px;
                 margin-right: 20px;
@@ -879,7 +879,7 @@
                 cursor: pointer;
     
                 .me {
-                    width: 260px;
+                    width: 280px;
                     margin: auto;
                     aspect-ratio: 1;
                     filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));

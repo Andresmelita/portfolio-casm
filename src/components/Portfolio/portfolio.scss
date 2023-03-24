@@ -745,13 +745,15 @@
 @media (min-width: 480px) and (max-width: 767px) {
     .portfolio-container {
         display: flex;
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 18px;
+        padding-bottom: 30px;
         flex-direction: column;
-        width: 100%;
-        height: 100vh;
-        padding-left: 30px;
-        padding-right: 30px;
+        flex-wrap: nowrap;
+        width: 100vw;
+        height: 100%;
+        padding-left: 10px;
+        align-self: center;
+        padding-right: 10px;
         align-items: center;
         position: relative;
         align-content: center;
@@ -762,52 +764,63 @@
             aspect-ratio: 1;
             position: absolute;
             transform: rotate(0deg);
-            right: 10px;
-            bottom: -140px;
+            left: 10px;
+            bottom: -56px;
             padding-bottom: 0px;
             margin-bottom: 0px;
             filter: brightness(0.8) contrast(1.2);
     
             .hoja {
-                width: 500px;
+                width: 150px;
                 filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.61));
             }
         }
     
         .portfolio-title {
             padding: 10px;
-            align-self: flex-start;
-            margin-left: 180px;
+            align-self: center;
+            margin-left: 0px;
             gap: 0.6rem;
             display: flex;
-            width: 300px;
-            margin-bottom: 30px;
+            width: max-content;
+            margin-bottom: 20px;
+            margin-top: 20px;
             color: aliceblue;
-            text-align: start;
-            font-size: 36px;
+            text-align: center;
+            font-size: 30px;
             cursor: pointer;
             color: rgb(255, 255, 255);
         
             p {
                 color: rgb(117, 192, 211);
-                font-size: 36px;
+                font-size: 30px;
             }
         }
         .projects {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
             align-items: center;
             align-content: center;
-            width: 82%;
-            gap: 2rem;
+            width: 80%;
+            gap: 1rem;
             height: 100%;
             margin: 10px;
-            padding: 42px;
+            padding: 10px;
             z-index: 100;
     
             .portfolio-projects {
                 border: solid 2px rgba(35, 106, 169, 0);
                 transition: 1s ease;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                flex-wrap: wrap;
+                overflow: hidden;
+                border-radius: 10px;
+                width: 430px;
+                height: 240px;
+                color: aliceblue;
     
                 .hamburguer {
                     z-index: 4000;
@@ -820,22 +833,13 @@
                         filter: drop-shadow(1px 1px 2.5px rgb(0, 0, 0));
                     }
                 }
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                flex-wrap: wrap;
-                overflow: hidden;
-                border-radius: 10px;
-                width: 430px;
-                height: 240px;
-                color: aliceblue;
-    
+
                 .project-img {
                     z-index: 100;
                     position: absolute;
-                    width: 99%;
-                    height: 99%;
-                    bottom: 0px;
+                    width: 100%;
+                    height: 100%;
+                    top: 0px;
                     transition: 1s;
                     transform: scale(1) rotate(0deg);
                     border: solid 2px rgb(0, 0, 0);
@@ -867,7 +871,7 @@
                         border-radius: 8px;
                         border: solid rgba(255, 255, 255, 0.671) 2px;
                         height: 215px;
-                        width: 405px;
+                        width: 96%;
                         font-weight: 700;
                         padding-top: 10px;
                         padding-left: 10px;
@@ -918,11 +922,12 @@
                     .buttons-container {
                         display: flex;
                         align-items: flex-end;
+                        align-content: flex-end;
                         flex-wrap: wrap;
                         width: 100%;
                         height: 100%;
-                        padding-bottom: 0px;
-                        padding-left: 50%;
+                        padding-bottom: 10px;
+                        padding-left: 10px;
                         gap: 0.6rem;
                         
                         .btn-portfolio {
@@ -1012,14 +1017,14 @@
             aspect-ratio: 1;
             position: absolute;
             transform: rotate(0deg);
-            left: 20px;
-            bottom: 0px;
+            left: 0px;
+            bottom: -44px;
             padding-bottom: 0px;
             margin-bottom: 0px;
             filter: brightness(0.8) contrast(1.2);
     
             .hoja {
-                width: 150px;
+                width: 100px;
                 filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.61));
             }
         }
@@ -1031,7 +1036,8 @@
             gap: 0.6rem;
             display: flex;
             width: max-content;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
             color: aliceblue;
             text-align: center;
             font-size: 30px;
