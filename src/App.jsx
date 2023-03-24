@@ -14,6 +14,13 @@ import CoverFooter from './components/Cover/CoverFooter'
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0)
   const [loading, setLoading] = useState(false)
+  
+  useEffect (()=>{
+    setLoading(true)
+    setTimeout(() => {
+        setLoading(false)
+    }, 1800)
+  },[])
 
   const handleScroll = () => {
       const position = window.pageYOffset;
@@ -24,16 +31,12 @@ function App() {
       window.addEventListener("scroll", handleScroll)
   }, [scrollHeight])
 
-  useEffect (()=>{
-    setLoading(true)
-    setTimeout(() => {
-        setLoading(false)
-    }, 1700)
-  },[])
+
 
   return (
-    <div className='App'>
-        {loading && <Loading />}
+    <div>
+      {loading && <Loading />}
+      <div className='App'>
         <Navbar className='navbar-app'/>
         <Cover/>
         <About/>
@@ -42,6 +45,7 @@ function App() {
         <Contact/>
         <CoverFooter/>
         <Footer/>
+      </div>
     </div>
   )
 }
