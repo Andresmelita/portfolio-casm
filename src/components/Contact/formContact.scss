@@ -569,18 +569,18 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
 	.form-container {
-		height: 710px;
+		height: 730px;
 		width: 100%;
 		z-index: 5000;
 		align-content: center;
 		margin: auto;
 		align-items: center;
-		padding-top: 50px;
-		margin-top: 20px;
+		padding-top: 70px;
+		margin-top: 40px;
 		padding-bottom: 50px;
 	
 		.contact_form{	
-			width: 460px; 
+			width: 400px; 
 			height: 92%;
 			margin: auto;
 			border-radius: 10px;  
@@ -613,26 +613,32 @@
 				}
 	
 				.form-content {
-					width: 96%;
+					width: 100%;
 					margin: auto;
 					z-index: 500;
-					padding-top: 65px;
+					padding-top: 66px;
 					padding-left: 8px;
+					margin-bottom: 20px;
 					position: absolute;
 					text-shadow: 2px 2px 2px black;
 	
 					.button-container {
+						width: 360px;
+						display: flex;
+						justify-content: center;
 						.btn-formOne {
 							height: 40px; 	
 							margin-bottom: 20px; 
 							margin: auto;
-							margin-left: 136px;
 							text-transform: uppercase;
 							background-color: #156b4a; 
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: 140px;   
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 160px;
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;
@@ -648,13 +654,17 @@
 							padding-left: 5px;
 							padding-right: 5px; 	
 							margin: auto;
-							margin-left: 136px;
+							margin-left: 110px;
+							margin-bottom: 20px;
 							text-transform: uppercase;
 							background-color: #1c5d83;
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: 140px;   
+							width: 160px;   
+							display: flex;
+							justify-content: center;
+							align-items: center;
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;
@@ -683,7 +693,7 @@
 		color: #030c36;
 		font-size: 14px;
 		font-weight: 500;
-		width: 408px; 
+		width: 344px; 
 		height: 36px; 
 		border-radius: 5px;  
 		border-style: solid; 
@@ -700,7 +710,7 @@
 		color: #030c36;
 		font-size: 16px;
 		font-weight: 500;
-		width: 405px; 
+		width: 344px; 
 		height: 100px; 
 		border-radius: 5px;  
 		border-style: solid; 
@@ -803,26 +813,31 @@
 				}
 	
 				.form-content {
-					width: 90%;
+					width: 100%;
 					margin: auto;
 					z-index: 500;
-					padding-top: 65px;
+					padding-top: 70px;
 					padding-left: 8px;
 					position: absolute;
 					text-shadow: 2px 2px 2px black;
 	
 					.button-container {
+						width: 280px;
+						display: flex;
+						justify-content: center;
 						.btn-formOne {
 							height: 40px; 	
 							margin-bottom: 20px; 
 							margin: auto;
-							margin-left: 0px;
 							text-transform: uppercase;
 							background-color: #156b4a; 
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: 140px;   
+							width: 150px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;
@@ -844,7 +859,10 @@
 							border-color: #ffffff; 
 							border-style: solid; 
 							border-radius: 30px;	
-							width: 140px;   
+							width: 150px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
 							cursor: pointer;
 							color: #ffffff;
 							transition: 1s;
@@ -865,7 +883,7 @@
 	}
 	
 	label {
-		padding-left: 10px;
+		padding-left: 20px;
 	}
 	
 	input{
@@ -921,7 +939,7 @@
 	}
 	
 	p{
-		font-size: 14px; 
+		font-size: 14px;
 		color: #ffffff; 
 	}
 	
