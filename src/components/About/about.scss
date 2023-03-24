@@ -356,35 +356,40 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .about-container {
         display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        padding-top: 18px;
+        flex-wrap: nowrap;
         position: relative;
         flex-direction: column;
-        height: 70vh;
-        align-content: flex-end;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 80px;
+        height: max-content;
+        width: 100%;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
     
         .about-title {
-            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
             display: flex;
             flex-wrap: wrap;
-            margin-left: 200px;
-            height: 100px;
-            width: 350px;
+            margin-left: 80px;
+            align-self: start;
+            height: 40px;
+            width: 40%;
     
             .title {
-                text-align: start;
+                text-align: center;
                 display: flex;
-                font-size: 36px;
+                font-size: 34px;
                 color: rgb(29, 71, 126);
                 gap: 1rem;
-                text-shadow: 1.4px 1.4px 3px black;
+                text-shadow: 0.5px 0.5px 2px black;
             }
             .title-p {
                 color: rgb(92, 172, 209);
-                font-size: 36px;
+                align-self: center;
+                text-align: center;
+                font-size: 34px;
             }
         }
     
@@ -393,7 +398,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 80vw;
+            width: 90%;
             margin: auto;
     
             .about-description {
@@ -401,17 +406,19 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: justify;
-                width: 60%;
+                width: 100%;
                 height: max-content;
-                border-left: solid rgba(22, 73, 141, 0.514);
-                margin-left: 90px;
-                margin-bottom: 60px;
+                margin-left: 60px;
+                margin-right: 60px;
+                margin-bottom: 0px;
                 color: rgb(0, 0, 0);
                 gap: 1.5rem;
+                order: 1;
     
                 .myName {
                     font-weight: 600;
                     line-height: 1.6;
+                    display: none;
                     font-size: 22px;
                     margin-right: 100px;
                     padding-left: 30px;
@@ -420,77 +427,78 @@
         
                 .paragraph {
                     line-height: 1.6;
-                    font-size: 16px;
-                    margin-right: 100px;
-                    padding-left: 30px;
+                    font-size: 18px;
+                    margin-right: 0px;
+                    padding-left: 0px;
                 }
     
                 .about-information {
                     display: flex;
-                    gap: 50px;
-                    grid-template-columns: repeat(1fr, 2fr);
-                    padding-left: 30px;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    gap: 10px;
+                    left: 0px;
                     margin-top: 0px;
     
                     .information-education, .information {
                         text-decoration: none;
-                        text-indent: 10px;
+                        text-indent: 0px;
                         width: 400px;
                         height: max-content;
-                        margin-left: 10px;
+                        margin-left: 0px;
     
     
                         .education-title {
-                            margin-bottom: -14px;
-                            margin-left: -10px;
+                            margin-bottom: -20px;
+                            margin-left: 0px;
                             font-weight: 800;
                             font-size: 20px;
                             color: black;
                         }
     
                         .myInformation-title {
-                            margin-bottom: -10px;
+                            margin-bottom: -20px;
                             font-weight: 800;
                             font-size: 20px;
                             color: black;
                             line-height: 1rem;
                         }
-    
+
                         .myInformation {
                             width: 500px;
-                            font-size: 16px;
-                            padding-left: 20px;
-    
+                            font-size: 18px;
+                            display: flex;
+                            flex-direction:column-reverse;
+                            padding-left: 0px;
+
                             .datum {
                                 width: 400px;
-                                display: flex;
-                                font-size: 16px;
+                                font-size: 18px;
                                 padding-bottom: px;
                                 color: black;
-    
-    
+
                                 span {
                                     font-weight: 600;
                                     color: black;
                                 }
                             }
                         }
-    
+
                         .education {
                             margin-bottom: 10px;
-                            margin-left: 20px;
-                            font-size: 16px;
+                            margin-left: 0px;
+                            font-size: 18px;
                             line-height: 1.2rem;
-    
+
                             li {
-                                margin-left: -26px;
+                                margin-left: 0px;
                             }
-    
+
                             .year {
                                 color: rgb(179, 179, 179);
-    
+
                             }
-    
+
                             .career {
                                 color: black;
                                 font-weight: 500;
@@ -507,15 +515,18 @@
             
             .about-img {
                 display: flex;
+                position: relative;
+                order: 2;
                 height: 100%;
-                width: 30vw;
+                width: 50vw;
                 margin: auto;
-                margin-right: -60px;
-                margin-bottom: -6px;
+                margin-right: 20px;
+                margin-bottom: -204px;
+                bottom: 200px;
                 cursor: pointer;
     
                 .me {
-                    width: 550px;
+                    width: 410px;
                     margin: auto;
                     aspect-ratio: 1;
                     filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.5));
