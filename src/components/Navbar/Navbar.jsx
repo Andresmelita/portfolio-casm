@@ -27,7 +27,7 @@ const Navbar = ({scrollHeight}) => {
                 <div className='menu-item'>
                     <div className='hamburguer' onClick={handleClick}>
                         {click ? (<FaTimes className='x-item' size={28} style={{color: '#ffffff'}} onClick={closeMenu}/>)
-                            : (<FaBars className='x-item' size={28} style={{color:'#ffffff'}}/>)}
+                            : (<FaBars className='h-item' size={28} style={{color:'#ffffff'}}/>)}
                     </div>
                 </div>
 

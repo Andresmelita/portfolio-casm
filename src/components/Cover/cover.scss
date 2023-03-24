@@ -641,14 +641,14 @@
             display: grid;
             z-index: 5000;
             grid-template-columns: auto;
-            width: 62px;
-            height: 260px;
+            width: 52px;
+            height: 180px;
             align-items: center;
             align-content: center;
             position: fixed;
             right: 0px;
             bottom: 100px;
-            gap: 2.6rem;
+            gap: 1.4rem;
             margin-top: 100px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
@@ -661,7 +661,7 @@
             .github, .linkedin, .instagram {
                 filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.61));
                 color: rgb(255, 255, 255);
-                font-size: 38px;
+                font-size: 28px;
                 margin: 0 auto;
                 padding: 0;
                 padding-left: 14px;
@@ -705,13 +705,15 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 4rem;
-        width: 70%;
+        width: 80%;
         align-content: space-between;
         margin: auto;
+        margin-right: 190px;
         padding: 70px;
         border-radius: 2rem;
     
         .container-description {
+            margin-top: 60px;
     
             p {
                 font-size: 20px;
@@ -720,7 +722,7 @@
             }
             .name {
                 font-weight: bold;
-                font-size: 60px;
+                font-size: 44px;
                 justify-content: center;
                 align-items: center;
                 background-image: linear-gradient(45deg, rgb(6, 120, 173),rgb(31, 104, 138), rgb(0, 89, 161), rgb(41, 115, 145));
@@ -735,10 +737,12 @@
     
             .developer {
                 text-align: start;
+                font-size: 18px;
             }
     
             .bachelor {
                 text-align: start;
+                font-size: 18px;
             }
     
             .content-button {
@@ -829,7 +833,7 @@
             font-weight: 600;
             overflow: hidden;
             height: 40px;
-            padding: 0 40px;
+            padding: 0 30px;
     
             &:before {
                 content: '[';
@@ -839,7 +843,7 @@
             &:after {
                 content: ']';
                 position: absolute;
-                right: 0;
+                right: 70px;
             }
     
             &:after, &:before {
@@ -944,7 +948,7 @@
 @media (min-width: 480px) and (max-width: 767px) {
     .cover-container {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         object-fit: contain;
         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.123);
         display: flex;
@@ -1275,7 +1279,7 @@
 @media screen and (max-width: 479px) {
     .cover-container {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         object-fit: contain;
         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.123);
         display: flex;
@@ -1309,11 +1313,11 @@
                 p {
                     font-size: 20px;
                     color: rgb(231, 231, 231);
-                    padding-left: 5px;
+                    padding-left: 0px;
                 }
                 .name {
                     font-weight: bold;
-                    font-size: 36px;
+                    font-size: 34px;
                     justify-content: center;
                     align-items: center;
                     background-image: linear-gradient(45deg, rgb(6, 120, 173),rgb(31, 104, 138), rgb(0, 89, 161), rgb(41, 115, 145));
@@ -1472,8 +1476,9 @@
         margin: auto;
         margin-left: 0px;
         margin-right: 0px;
-        align-self: center;
-        width: max-content;
+        align-self: start;
+        align-items: start;
+        width: 100%;
         padding-top: 10px;
         overflow: hidden;
         font-size: 22px;
@@ -1489,17 +1494,17 @@
             overflow: hidden;
             margin: auto;
             height: 40px;
-            padding: 0 20px;
+            padding: 0 0px;
     
             &:before {
                 content: '[';
-                left: 40px;
+                left: 0px;
             }
     
             &:after {
                 content: ']';
                 position: absolute;
-                right: 10px;
+                right: 0px;
             }
     
             &:after, &:before {
