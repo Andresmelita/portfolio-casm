@@ -87,13 +87,6 @@ const Portfolio = () => {
         window.open('https://github.com/Andresmelita/quoteBox')
     }
 
-    //? Links Ecommerce
-    // const toWeb5 = () => {
-    //     window.open('')
-    // }
-    // const toGitHub5 = () => {
-    //     window.open('')
-    // }
 
     return (
         <div className='portfolio-container' id='portfolio'>
@@ -113,8 +106,8 @@ const Portfolio = () => {
                             <h2 className='line'><FaQuestion className='icon-react'/> Para Cuando?</h2>
                             <p>Proyecto en grupo diseñado para votar y proponer eventos en la comunidad de residencia.</p>
                             <div className='buttons-container'>
-                                <button className='btn-portfolio' onClick={toWeb1}>Ver Proyecto</button>
-                                <button className='btn-portfolio' onClick={toGitHub1}>Repositorio</button>
+                                <button className='btn-portfolio' onClick={toWeb0}>Ver Proyecto</button>
+                                <button className='btn-portfolio' onClick={toGitHub0}>Repositorio</button>
                             </div>
                     </div>
                     <img className='project-img' src={project0} alt='' id='project1'/>
