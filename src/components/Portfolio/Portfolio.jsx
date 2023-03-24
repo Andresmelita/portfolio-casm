@@ -19,18 +19,23 @@ import { useState } from 'react'
 
 const Portfolio = () => {
 
+    const [click0, setClick0] = useState(false)
     const [click1, setClick1] = useState(false)
     const [click2, setClick2] = useState(false)
     const [click3, setClick3] = useState(false)
     const [click4, setClick4] = useState(false)
     const [click5, setClick5] = useState(false)
 
+    const handleClick0 = () => setClick0(!click0)
     const handleClick1 = () => setClick1(!click1)
     const handleClick2 = () => setClick2(!click2)
     const handleClick3 = () => setClick3(!click3)
     const handleClick4 = () => setClick4(!click4)
     const handleClick5 = () => setClick5(!click5)
 
+    const hover0 = () => {
+        setClick0(false)
+    }
     const hover1 = () => {
         setClick1(false)
     }
@@ -98,11 +103,11 @@ const Portfolio = () => {
 
 
                 <div className='portfolio-projects'>
-                    <div className='hamburguer' onClick={handleClick1}>
-                        {click1 ? (<HiCursorClick className='icon' size={27} style={{color: '#ffffff'}} onClick={hover1}/>)
+                    <div className='hamburguer' onClick={handleClick0}>
+                        {click0 ? (<HiCursorClick className='icon' size={27} style={{color: '#ffffff'}} onClick={hover0}/>)
                             : (<MdAdsClick className='icon' size={27} style={{color:'#ffffff'}}/>)}
                     </div>
-                    <div className={click1 ? 'project-information active' : 'project-information'}>
+                    <div className={click0 ? 'project-information active' : 'project-information'}>
                             <h2 className='line'><FaQuestion className='icon-react'/> Para Cuando?</h2>
                             <p>Proyecto en grupo diseñado para votar y proponer eventos en la comunidad de residencia.</p>
                             <div className='buttons-container'>
