@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiJavascript, SiEslint, SiTailwindcss, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiReact, SiRedux, SiGit, SiExpress, SiSequelize, SiReactrouter, SiNodedotjs, SiNodemon, SiPostgresql, SiSass, SiPython } from 'react-icons/si'
+import { SiJavascript, SiEslint, SiTailwindcss, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiReact, SiRedux, SiGit, SiExpress, SiSequelize, SiReactrouter, SiNodedotjs, SiNodemon, SiPostgresql, SiSass, SiPython, SiAngular } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import postgreSQL from '../../media/icons/postgresql.svg'
 import './skills.scss'
@@ -30,6 +30,10 @@ const Skills = () => {
                 <div className='skillbox-technologies'>
                     <SiCss3 className='skill-icon cssIcon'/>
                     <p className='skill-name'>CSS</p>
+                </div>
+                <div className='skillbox-technologies'>
+                    <SiAngular className='skill-icon angularIcon'/>
+                    <p className='skill-name'>Angular</p>
                 </div>
                 <div className='skillbox-technologies'>
                     <SiGit className='skill-icon gitIcon'/>
